@@ -6,6 +6,7 @@ module.exports = {
       white1:"#F3F4F7",
       white2:"#E2E4E9",
       white3:"#C7CAD1",
+      black:"#0D0C0C",
       black1:"#808080",
       black2:"#525252",
       black3:"#3D3D3D",

@@ -62,6 +62,11 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
     font-size: 1rem;
   }
 
+  .standardbody2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.9rem;
+  }
+
   .smallbody {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 0.8rem;
@@ -76,4 +81,204 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 0.512rem;
   }
+
+  #first {
+    background-image: url(img/dorte1.webp);
+    background-size: contain;
+  }
+
+  #second {
+    background-image: url(img/dorte2.jpg);
+    background-size: contain;
+  }
+
+  #third {
+    background-image: url(img/dorte3.webp);
+    background-size: contain;
+  }
+  #fourth {
+    background-image: url(img/dorte4.webp);
+    background-size: contain;
+  }
+  #one {
+    background-image: url(img/lone1.webp);
+    background-size: contain;
+  }
+
+  #two {
+    background-image: url(img/lone2.webp);
+    background-size: contain;
+  }
+
+  #three {
+    background-image: url(img/lone3.webp);
+    background-size: contain;
+  }
+
+  #four {
+    background-image: url(img/lone4.webp);
+    background-size: contain;
+  }
+
+  #un {
+    background-image: url(img/daisy1.webp);
+    background-size: contain;
+  }
+
+  #deux {
+    background-image: url(img/daisy2.webp);
+    background-size: contain;
+  }
+
+  #trois {
+    background-image: url(img/daisy3.webp);
+    background-size: contain;
+  }
+
+  #quatre {
+    background-image: url(img/daisy4.webp);
+    background-size: contain;
+  }
+
+  #uno {
+    background-image: url(img/inge1.webp);
+    background-size: contain;
+  }
+
+  #dos {
+    background-image: url(img/inge2.webp);
+    background-size: contain;
+  }
+
+  #tres {
+    background-image: url(img/inge3.webp);
+    background-size: contain;
+  }
+
+  #quatro {
+    background-image: url(img/inge4.jpg);
+    background-size: contain;
+  }
+
+  #ein {
+    background-image: url(img/marvin1.webp);
+    background-size: contain;
+  }
+
+  #zwei {
+    background-image: url(img/marvin2.webp);
+    background-size: contain;
+  }
+
+  #drei {
+    background-image: url(img/marvin3.webp);
+    background-size: contain;
+  }
+
+  #vier {
+    background-image: url(img/marvin4.webp);
+    background-size: contain;
+  }
+
+  #unu {
+    background-image: url(img/stan1.webp);
+    background-size: cover;
+  }
+
+  #doi {
+    background-image: url(img/stan2.webp);
+    background-size: cover;
+  }
+
+  #trei {
+    background-image: url(img/stan3.webp);
+    background-size: contain;
+  }
+
+  #patru {
+    background-image: url(img/stan4.webp);
+    background-size: cover;
+  }
+
+  #en {
+    background-image: url(img/mari1.webp);
+    background-size: cover;
+  }
+
+  #to {
+    background-image: url(img/mari2.webp);
+    background-size: cover;
+  }
+
+  #tre {
+    background-image: url(img/mari3.webp);
+    background-size: cover;
+  }
+
+  #fire {
+    background-image: url(img/mari4.webp);
+    background-size: cover;
+  }
+
+  #tina1 {
+    background-image: url(img/tina1.jpg);
+    background-size: cover;
+  }
+
+  #tina2 {
+    background-image: url(img/tina2.jpg);
+    background-size: cover;
+  }
+
+  #tina3 {
+    background-image: url(img/tina3.jpg);
+    background-size: cover;
+  }
+
+  #tina4 {
+    background-image: url(img/tina4.webp);
+    background-size: cover;
+  }
+
+  
+  #hanne1 {
+    background-image: url(img/hanne1.jpg);
+    background-size: cover;
+  }
+
+  #hanne2 {
+    background-image: url(img/hanne2.jpg);
+    background-size: cover;
+  }
+
+  #hanne3 {
+    background-image: url(img/hanne3.jpg);
+    background-size: cover;
+  }
+
+  #hanne4 {
+    background-image: url(img/hanne4.jpg);
+    background-size: cover;
+  }
+
+  #vald1 {
+    background-image: url(img/vald1.webp);
+    background-size: cover;
+  }
+
+  #vald2 {
+    background-image: url(img/vald2.webp);
+    background-size: cover;
+  }
+
+  #vald3 {
+    background-image: url(img/vald3.webp);
+    background-size: cover;
+  }
+
+  #vald4 {
+    background-image: url(img/vald4.webp);
+    background-size: cover;
+  }
+
 }

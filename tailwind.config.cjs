@@ -19,6 +19,7 @@ module.exports = {
       orange1: "#FFC100",
       orange2: "#FF7400",
       orange3: "#FF4D00",
+      grey: "#3D3D3D",
     },
     extend: {
       fontFamily: {

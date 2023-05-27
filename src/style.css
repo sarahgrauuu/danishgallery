@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {}
+
 /* font-family: 'Playfair Display', serif;
 font-family: 'Plus Jakarta Sans', sans-serif;*/
 @layer base {
@@ -20,7 +28,7 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
     font-size: 3.815rem;
   }
 
-  .herosection{
+  .herosection {
     font-family: "Playfair Display", serif;
     font-size: 2.8rem;
   }
@@ -101,10 +109,12 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
     background-image: url(img/dorte3.webp);
     background-size: contain;
   }
+
   #fourth {
     background-image: url(img/dorte4.webp);
     background-size: contain;
   }
+
   #one {
     background-image: url(img/lone1.webp);
     background-size: contain;
@@ -245,7 +255,7 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
     background-size: cover;
   }
 
-  
+
   #hanne1 {
     background-image: url(img/hanne1.jpg);
     background-size: cover;

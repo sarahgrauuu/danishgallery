@@ -91,17 +91,26 @@
   --extraBold: 800;
   /* Use for copy in CT button click state. */
 
-  --bodyTextLineHeight: 1.75;
+
+  /* LINE HEIGHTS & Letter Spacing */
+
+  --lineheigt150: 1.538rem;
+
+  --bodyTextLineHeight: 1.75rem;
   /* Default line height and letter spacing for body text. */
 
-  --bodytextletterspacing: 0.01em;
+  --bodytextletterspacing: 0.01rem;
   /* Body Text Letter Spacing */
 
-  --lineheight5: 0.05em;
+  --letterspacing5: 0.05rem;
   /* Use for CTA Button Copy Hover State */
 
-  --lineheight3: 0.03em;
+  --letterspacing3: 0.03rem;
   /* Use for CTA Button Copy Click State */
+
+  --letterspacing1: 0.008rem;
+
+
 
   /* Spacings */
   --spacing10: 0.625rem;
@@ -150,17 +159,17 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
 @layer base {
   h1 {
     font-family: "Playfair Display", serif;
-    font-size: 5.96rem;
+    font-size: var(--largeDisplay);
   }
 
   h2 {
     font-family: "Playfair Display", serif;
-    font-size: 4.768rem;
+    font-size: var(--mediumDisplay);
   }
 
   h3 {
     font-family: "Playfair Display", serif;
-    font-size: 3.815rem;
+    font-size: var(--smallDisplay);
   }
 
   .herosection {
@@ -170,29 +179,25 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
 
   h4 {
     font-family: "Playfair Display", serif;
-    font-size: 3.052rem;
+    font-size: var(--xSmallDisplay);
   }
 
   h5 {
     font-family: "Playfair Display", serif;
-    font-size: 2.441rem;
+    font-size: (var(--xxSmallDisplay));
   }
 
-  h6 {
-    font-family: "Playfair Display", serif;
-    font-size: 1.953rem;
-  }
 
   /* The headlines are stopping now its body text */
 
   .xsdisplay {
     font-family: "Playfair Display", serif;
-    font-size: 1.563rem;
+    font-size: var(--xSmallDisplay);
   }
 
   .xxsdisplay {
     font-family: "Playfair Display", serif;
-    font-size: 1.25rem;
+    font-size: var(--xxSmallDisplay);
   }
 
   .lbodytext {

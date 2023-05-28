@@ -8,7 +8,6 @@
   padding: 0;
 }
 
-
 :root {
   /* Font Sizes */
   --largeDisplay: 3.815rem;
@@ -145,14 +144,12 @@
   /* Widths */
   --w221: 221px;
 
-
   /* Heights */
   --h32: 32px;
   --h360: 360px;
   --h582: 582px;
   --h145: 145px;
 }
-
 
 /* font-family: 'Playfair Display', serif;
 font-family: 'Plus Jakarta Sans', sans-serif;*/
@@ -234,8 +231,6 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 0.512rem;
   }
-
-
 
   #first {
     background-image: url(img/dorte1.webp);
@@ -397,7 +392,6 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
     background-size: cover;
   }
 
-
   #hanne1 {
     background-image: url(img/hanne1.jpg);
     background-size: cover;
@@ -438,6 +432,19 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
     background-size: cover;
   }
 
+  #banner {
+    position: relative;
+    padding: 20px;
+  background-color: black;
+  
+  }
 
-
+  .close-btn {
+    color: white;
+    position: absolute;
+    top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  }
 }

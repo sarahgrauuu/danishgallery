@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -143,6 +144,7 @@
   /* sizings */
   /* Widths */
   --w221: 221px;
+  --w295: 295px;
 
   /* Heights */
   --h32: 32px;
@@ -435,16 +437,97 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
   #banner {
     position: relative;
     padding: 20px;
-  background-color: black;
-  
+    background-color: black;
+
   }
 
   .close-btn {
     color: white;
     position: absolute;
     top: 10px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
   }
+}
+
+
+/* PRODUCT CARD BUTTON */
+
+.productcardbutton {
+  width: var(--w221);
+  height: var(--h32);
+  background-color: black;
+  color: white;
+  font-size: var(--smallBody);
+  letter-spacing: var(--letterspacing3);
+  content: "ADD TO CART";
+}
+
+.productcardbutton:hover {
+  background-color: var(--orange);
+  letter-spacing: var(--letterspacing5);
+  font-weight: var(--bold);
+  transition: 0.3s ease-out;
+
+}
+
+.productcardbutton:active {
+  background-color: var(--orange);
+  letter-spacing: var(--letterspacing3);
+  font-weight: var(--extraBold);
+  transition: 0.3s ease-out;
+}
+
+.productcardbutton:before {
+  content: "ADD TO CART";
+}
+
+.productcardbutton:active:before {
+  content: "SUCCESSFULLY ADDED";
+}
+
+
+
+
+
+
+
+
+/* PRODUCT CARD STYLING */
+
+.productcardsqaure {
+  max-width: var(--w295);
+  height: auto;
+  background-color: var(--white1);
+
+}
+
+img.productimgsquare {
+  max-width: 100%;
+}
+
+p.artistname {
+  font-size: var(--smallBody);
+  letter-spacing: var(--letterspacing5);
+}
+
+p.artname {
+  font-size: var(--mediumBody);
+}
+
+p.size,
+p.artcategory {
+  font-size: var(--xsBody);
+  color: var(--black2);
+}
+
+p.price {
+  font-weight: var(--medium);
+  font-size: var(--cardCopy14);
+}
+
+
+.productcardsqaure:hover {
+  box-shadow: var(--dropShadow1);
 }

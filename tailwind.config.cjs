@@ -4,6 +4,7 @@ module.exports = {
     "./src/**/*.{html,vue,js,ts,jsx,tsx}",
     "./src/index.html",
     "./src/artists.html",
+    
   ],
   theme: {
     colors: {
@@ -41,20 +42,18 @@ module.exports = {
         3: "3%",
         5: "5%",
       },
-      borderRadius:{
-        hard:"1px",
-        soft:"3px",
+      borderRadius: {
+        hard: "1px",
+        soft: "3px",
       },
       boxShadow: {
         dropshadow1: "0 1px 4px rgba(0, 0, 0,.4)",
         dropshadow2: "2px 2px 4px 3px rgba(0, 0, 0, .1)",
       },
 
-    letterSpacing: {
-      bodytextletterspacing:"1%",
-    }
-
-
+      letterSpacing: {
+        bodytextletterspacing: "1%",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],

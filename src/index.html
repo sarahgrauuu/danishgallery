@@ -1,184 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Danish Gallery</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Plus+Jakarta+Sans&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/style.css" />
-  <title>Danish Gallery</title>
-</head>
-
-<body>
-  <div id="banner" class=" container flex h-16 w-full max-w-full flex-row bg-black">
-    <span id="close-btn" class="close-btn">&times;</span>
-    <div class="m-auto flex flex-row">
-      <p class="smallbody lg:xxsdisplay pr-2 pl-2 text-center text-white1">
-        2000+ paintings, free shipping & money back guarantee!
-      </p>
-      <img class="lg:h-10" src="img/delivery.svg" alt="" />
-    </div>
-  </div>
-  <header class="mt-1 mb-1 items-center justify-between py-4 px-8 lg:flex lg:px-16">
-    <nav class="flex flex-row items-center lg:flex">
-      <img class="lg:hidden" src="img/burger.svg" alt="" />
-      <a href="index.html" aria-label="danishgallery logo"><img class="m-auto h-14 lg:h-16" src="img/logo.svg"
-          alt="" /></a>
-      <ul class="standardbody2 ml-2 hidden tracking-widest lg:flex lg:flex-grow lg:items-center lg:justify-center">
-        <!-- Menu items -->
-        <li>
-          <a href="#" class="px-4 py-2 font-semibold text-black">ARTWORK</a>
-        </li>
-        <li>
-          <a href="artists.html" class="px-4 py-2 font-semibold text-black">ARTISTS</a>
-        </li>
-        <li>
-          <a href="#" class="px-4 py-2 font-semibold text-black">SOLD ARTWORK</a>
-        </li>
-        <li>
-          <a href="#" class="px-4 py-2 font-semibold text-black">ABOUT US</a>
-        </li>
-        <li>
-          <a href="#" class="px-4 py-2 font-semibold text-black">BUY A GIFT CARD</a>
-        </li>
-        <li>
-          <a href="#" class="px-4 py-2 font-semibold text-orange2">ARE YOU AN ARTIST?</a>
-        </li>
-      </ul>
-
-      <div class="ml-8 flex items-end space-x-3 lg:flex">
-        <!-- Icons -->
-        <img class="" src="img/search.svg" alt="" /><img class="mr-2 hidden lg:block" src="img/user.svg" alt="" />
-        <img class="mr-2" src="img/heart.svg" alt="" />
-        <img class="hidden lg:block" src="img/cart.svg" alt="" />
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!--HERO SECTION-->
-    <section>
-      <div class="relative">
-        <p
-          class="xxsdisplay lg:herosection absolute top-1/2 bottom-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-orange3">
-          Looking for the perfect artwork for your living room wall?
+  <body>
+    <div
+      id="banner"
+      class="container flex h-16 w-full max-w-full flex-row bg-black"
+    >
+      <span id="close-btn" class="close-btn">&times;</span>
+      <div class="m-auto flex flex-row">
+        <p class="smallbody lg:xxsdisplay pr-2 pl-2 text-center text-white1">
+          2000+ paintings, free shipping & money back guarantee!
         </p>
-        <img class="mx-auto" src="img/heroimg.webp" alt="" />
-        <div class="flex flex-row justify-center">
-          <button
-            class="smallbody lg:mbodytext container absolute -bottom-2 left-1/2 h-10 w-36 -translate-x-1/2 -translate-y-1/2 border-x border-y border-black3 bg-black font-semibold tracking-widest text-white1 lg:-bottom-1 lg:h-14 lg:w-56 lg:border-solid lg:bg-white1 lg:text-black">
-            EXPLORE ARTISTS
-          </button>
+        <img class="lg:h-10" src="img/delivery.svg" alt="" />
+      </div>
+    </div>
+    <header
+      class="mt-1 mb-1 items-center justify-between py-4 px-8 lg:flex lg:px-16"
+    >
+      <nav class="flex flex-row items-center lg:flex">
+        <img class="lg:hidden" src="img/burger.svg" alt="" />
+        <a href="index.html" aria-label="danishgallery logo"
+          ><img class="m-auto h-14 lg:h-16" src="img/logo.svg" alt=""
+        /></a>
+        <ul
+          class="standardbody2 ml-2 hidden tracking-widest lg:flex lg:flex-grow lg:items-center lg:justify-center"
+        >
+          <!-- Menu items -->
+          <li>
+            <a href="#" class="px-4 py-2 font-semibold text-black">ARTWORK</a>
+          </li>
+          <li>
+            <a href="artists.html" class="px-4 py-2 font-semibold text-black"
+              >ARTISTS</a
+            >
+          </li>
+          <li>
+            <a href="#" class="px-4 py-2 font-semibold text-black"
+              >SOLD ARTWORK</a
+            >
+          </li>
+          <li>
+            <a href="#" class="px-4 py-2 font-semibold text-black">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#" class="px-4 py-2 font-semibold text-black"
+              >BUY A GIFT CARD</a
+            >
+          </li>
+          <li>
+            <a href="#" class="px-4 py-2 font-semibold text-orange2"
+              >ARE YOU AN ARTIST?</a
+            >
+          </li>
+        </ul>
+
+        <div class="ml-8 flex items-end space-x-3 lg:flex">
+          <!-- Icons -->
+          <img class="" src="img/search.svg" alt="" /><img
+            class="mr-2 hidden lg:block"
+            src="img/user.svg"
+            alt=""
+          />
+          <img class="mr-2" src="img/heart.svg" alt="" />
+          <img class="hidden lg:block" src="img/cart.svg" alt="" />
         </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--HERO SECTION-->
+      <section>
+        <div class="relative">
+          <p
+            class="xxsdisplay lg:herosection absolute top-2 right-1/2 mt-7 ml-12 text-center text-orange3 lg:ml-48 lg:mt-10"
+          >
+            Looking for the perfect artwork for your living room wall?
+          </p>
+          <img class="mx-auto" src="img/heroimg.webp" alt="" />
+          <div class="flex flex-row justify-center">
+            <a href="artists.html"
+              ><button
+                class="smallbody lg:mbodytext container absolute -bottom-2 left-1/2 h-10 w-36 -translate-x-1/2 -translate-y-1/2 border-x border-y border-black3 bg-black font-semibold tracking-widest text-white1 lg:-bottom-1 lg:h-14 lg:w-56 lg:border-solid lg:bg-white1 lg:text-black"
+              >
+                EXPLORE ARTISTS
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          id="subhero"
+          class="container mx-auto flex w-full max-w-full grid-rows-3 flex-col items-center gap-y-7 bg-black3 pt-spacing40 pb-spacing40 pl-spacing10 pr-spacing10 text-white1 lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:justify-center lg:gap-x-spacing100 lg:pl-spacing100 lg:pr-spacing100"
+        >
+          <div class="mx-auto grid grid-cols-1 grid-rows-2 items-center">
+            <p class="xxsdisplay lg:xsdisplay text-center lg:ml-4">
+              100 % SATISFACTION GUARANTEE
+            </p>
+            <p class=".smallbody text-center lg:ml-4">
+              Hang the painting in your own home and assess in peace and quiet
+              whether you are satisfied.
+            </p>
+          </div>
+          <div class="mx-auto grid grid-cols-1 grid-rows-2 items-center">
+            <p class="xxsdisplay lg:xsdisplay text-center lg:ml-4">
+              UNIQUE ART TOP ARTISTS
+            </p>
+            <p class=".smallbody text-center lg:ml-4">
+              Paintings of which only one exists. Unique art from specially
+              selected artists.
+            </p>
+          </div>
+
+          <div class="mx-auto grid grid-cols-1 grid-rows-2 items-center">
+            <p class="xxsdisplay lg:xsdisplay text-center">SECURE PAYMENT</p>
+            <p class=".smallbody text-center">
+              Payment with your credit card is encrypted and secure.
+            </p>
+          </div>
+        </div>
+        <article>
+          <!-- filters goes here -->
+        </article>
+        <article id="productcardview">
+          <div class="productcardsqaure"></div>
+          <div class="productcardsqaure"></div>
+          <div class="productcardhorizontal"></div>
+          <div class="productcardvertical"></div>
+        </article>
+      </section>
+
+      <!--ARTISTS section-->
+
+      <h3 class="ml-7 mt-3">ARTISTS</h3>
+      <a href="artists.html"
+        ><p class="smallbody mr-3 mb-3 flex justify-end hover:underline">
+          See all Artists
+        </p></a
+      >
+      <div
+        class="mb-6 mt-2 grid grid-cols-2 grid-rows-3 place-items-center gap-6 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center"
+      >
+        <div class="col-span-2 h-20 text-center lg:col-span-1">
+          <h4>Annette Mahoney</h4>
+          <p class="mbodytext">Denmark</p>
+        </div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="ann1"
+        ></div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="ann2"
+        ></div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="ann3"
+        ></div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="ann4"
+        ></div>
+      </div>
+      <div
+        class="mb-5 mt-3 grid grid-cols-2 grid-rows-3 place-items-center gap-6 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center"
+      >
+        <div class="col-span-2 h-20 text-center lg:col-span-1">
+          <h4>Dorte Juul</h4>
+          <p class="mbodytext">Denmark</p>
+        </div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="first"
+        ></div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="second"
+        ></div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="third"
+        ></div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="fourth"
+        ></div>
+      </div>
+      <div
+        class="mb-8 mt-4 grid grid-cols-2 grid-rows-3 place-items-center gap-6 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center"
+      >
+        <div class="col-span-2 h-20 text-center lg:col-span-1">
+          <h4>Valdemar</h4>
+          <p class="mbodytext">Denmark</p>
+        </div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="vald1"
+        ></div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="vald2"
+        ></div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="vald3"
+        ></div>
+        <div
+          class="h-52 w-52 border-x border-y border-solid border-black3"
+          id="vald4"
+        ></div>
       </div>
 
+      <!--Kim section -->
 
-
-      <div id="subhero"
-        class="container mx-auto pt-spacing40 pb-spacing40 pl-spacing10 pr-spacing10 flex w-full max-w-full grid-rows-3 flex-col items-center gap-y-7 bg-black3 text-white1 lg:grid lg:grid-cols-3 lg:gap-x-spacing100 lg:grid-rows-1 lg:justify-center lg:pl-spacing100 lg:pr-spacing100">
-        <div class="mx-auto grid grid-cols-1 grid-rows-2 items-center ">
-          <p class="xxsdisplay text-center lg:xsdisplay lg:ml-4">100 % SATISFACTION GUARANTEE</p>
-          <p class=".smallbody text-center lg:ml-4">
-            Hang the painting in your own home and assess in peace and quiet
-            whether you
-            are satisfied.
+      <section class="my-12 grid grid-rows-1 items-center lg:grid-cols-3">
+        <div class="mx-auto lg:col-span-1"><img class="h-96" src="img/kim.svg" alt="" /></div>
+        <div class="mx-2 text-left lg:col-span-2">
+          <p class="xxsdisplay mt-8 text-center">
+            Buy original art online at Danish Gallery!
+          </p>
+          <p class="xxsdisplay mt-4">
+            With our selection of over 2000 unique paintings for sale online, in
+            all sizes, prices and genres, there is something for every taste,
+            every budget and every home.
+          </p>
+          <p class="smallbody mt-4 tracking-widest">
+            Take a leisurely look at the many works of art among our
+            <strong> Danish and international artists</strong>, and strike when
+            you have found the perfect painting for you and your home in
+            <strong>Denmark's best online art gallery</strong>.
+          </p>
+          <p class="smallbody mt-4 tracking-widest">
+            Remember that if you send us an email with a photo of your wall,
+            we'll be happy to<strong>
+              photoshop in the paintings you're looking at</strong
+            >. That way, you can
+            <strong
+              >better visualize how things will turn out in your home</strong
+            >.
+          </p>
+          <p class="smallbody mt-4 tracking-widest">Kind regards,</p>
+          <p class="smallbody mt-4 tracking-widest">
+            Kim Svarrer - Danish Gallery
           </p>
         </div>
-        <div class="mx-auto grid grid-cols-1 grid-rows-2 items-center ">
-          <p class="xxsdisplay text-center  lg:xsdisplay lg:ml-4 ">UNIQUE ART TOP ARTISTS</p>
-          <p class=".smallbody text-center lg:ml-4 ">Paintings of which only one exists. Unique art from specially
-            selected artists.
-          </p>
+      </section>
+    </main>
+    <!--footer starts-->
+    <footer class="bg-black text-white1">
+      <div class="flex flex-col items-center gap-4 lg:grid lg:grid-cols-3">
+        <div class="smallbody lg:standardbody">
+          <div class="mx-auto mt-5 inline-block lg:ml-16">
+            <p class="lg:mbodytext text-orange2">Danish Gallery</p>
+            <hr class="my-3 h-px w-32 border-0 bg-orange2" />
+
+            <p>Gallery Landlystvej 146,</p>
+            <p>6715 Esbjerg N - Denmark</p>
+            <p>+45 26 66 5605</p>
+            <p>info@danishgallery.com</p>
+            <p>CVR: 26965632DK</p>
+            <p>Nykredit Bank: 5479</p>
+            <p>0004427960</p>
+          </div>
         </div>
-
-        <div class="mx-auto grid grid-cols-1 grid-rows-2 items-center ">
-          <p class="xxsdisplay text-center lg:xsdisplay ">SECURE PAYMENT</p>
-          <p class=".smallbody text-center ">Payment with your credit card is encrypted and secure.
-
+        <div class="lg:m-auto">
+          <p
+            class="smallbody lg:standardbody pt-12 text-center tracking-widest"
+          >
+            SIGN UP TO THE NEWSLETTER
           </p>
+          <div
+            class="lg: mt-4 h-12 w-64 items-center bg-white1 outline outline-2 outline-offset-0 outline-orange2"
+          ></div>
         </div>
-
-      </div>
-    </section>
-    <article id="filters" class="pt-spacing40 pb-spacing40">
-      <!-- filters goes here -->
-      <p class="sample">WTF</p>
-    </article>
-    <article id="productcardview"
-      class="pt-spacing40 pb-spacing40 pl-spacing10 pr-spacing10 grid grid-cols-1 justify-items-center ">
-      <div class="productcardsqaure">
-        <a href=""><img src="img/dorte1.webp" class="productimgsquare" alt="">
-          <div class="infocontainer pr-spacing12 pl-spacing12">
-            <p class="artistname pt-spacing20">DORTE JUUL</p>
-            <p class="artname pt-spacing20">ABSTRACTION</p>
-            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
-              <p class="size">100 X 120 CM</p>
-              <p class="artcategory">ABSTRACT</p>
+        <div class="mt-12">
+          <div class="grid grid-cols-2">
+            <div class="smallbody mx-auto">
+              <p>About us</p>
+              <p class="mt-3">Art for business</p>
+              <p class="mt-3">Contact</p>
             </div>
-            <p class="price">7500 kr</p>
-          </div>
-        </a>
-        <div class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10">
-         <button class="productcardbutton"> </button> 
-         
-        </div>
-      </div>
-      
-
-      <div class="productcardsqaure"></div>
-      <div class="productcardhorizontal"></div>
-      <div class="productcardvertical"></div>
-    </article>
-  </main>
-
-  <footer class="bg-black text-white1">
-    <div class="flex flex-col items-center gap-4 lg:grid lg:grid-cols-3">
-      <div class="smallbody lg:standardbody">
-        <div class="mx-auto mt-5 inline-block lg:ml-16">
-          <p class="lg:mbodytext text-orange2">Danish Gallery</p>
-          <hr class="my-3 h-px w-32 border-0 bg-orange2" />
-
-          <p>Gallery Landlystvej 146,</p>
-          <p>6715 Esbjerg N - Denmark</p>
-          <p>+45 26 66 5605</p>
-          <p>info@danishgallery.com</p>
-          <p>CVR: 26965632DK</p>
-          <p>Nykredit Bank: 5479</p>
-          <p>0004427960</p>
-        </div>
-      </div>
-      <div class="lg:m-auto">
-        <p class="smallbody lg:standardbody pt-12 text-center tracking-widest">
-          SIGN UP TO THE NEWSLETTER
-        </p>
-        <div class="lg: mt-4 h-12 w-64 items-center bg-white1 outline outline-2 outline-offset-0 outline-orange2"></div>
-      </div>
-      <div class="mt-12">
-        <div class="grid grid-cols-2">
-          <div class="smallbody mx-auto">
-            <p>About us</p>
-            <p class="mt-3">Art for business</p>
-            <p class="mt-3">Contact</p>
-          </div>
-          <div class="smallbody ml-6">
-            <p>FAQ</p>
-            <p class="mt-3">Trustpilot</p>
-            <p class="mt-3">Buy a gift card</p>
+            <div class="smallbody ml-6">
+              <p>FAQ</p>
+              <p class="mt-3">Trustpilot</p>
+              <p class="mt-3">Buy a gift card</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <section class="mt-12">
-      <img class="mx-auto" src="img/paysystems.svg" alt="" />
-      <div class="mt-7 mr-8 flex flex-row justify-center pb-4 lg:justify-end">
-        <img src="img/faceb.svg" alt="" /> <img src="img/ig.svg" alt="" />
-      </div>
-    </section>
-  </footer>
-  <script type="module" src="./main.js"></script>
-</body>
-
+      <section class="mt-12">
+        <img class="mx-auto" src="img/paysystems.svg" alt="" />
+        <div class="mt-7 mr-8 flex flex-row justify-center pb-4 lg:justify-end">
+          <img src="img/faceb.svg" alt="" /> <img src="img/ig.svg" alt="" />
+        </div>
+      </section>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>

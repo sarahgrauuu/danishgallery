@@ -432,6 +432,26 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
     background-size: cover;
   }
 
+  #ann1 {
+    background-image: url(img/ann1.webp);
+    background-size: cover;
+  }
+
+  #ann2 {
+    background-image: url(img/ann2.webp);
+    background-size: cover;
+  }
+
+  #ann3 {
+    background-image: url(img/ann3.webp);
+    background-size: cover;
+  }
+
+  #ann4 {
+    background-image: url(img/ann4.webp);
+    background-size: cover;
+  }
+
   #banner {
     position: relative;
     padding: 20px;

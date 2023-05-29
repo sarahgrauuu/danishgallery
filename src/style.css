@@ -511,7 +511,11 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
 
 
 
+/* Article Productview */
 
+article.productview {
+  background-color: white;
+}
 
 
 /* PRODUCT CARD STYLING */
@@ -551,3 +555,28 @@ p.price {
 .productcardsqaure:hover {
   box-shadow: var(--dropShadow1);
 }
+
+div.likeicon-container {
+  content: url(img/likestatic.svg);
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+}
+
+div.likeicon-container:hover {
+  content: url(img/likehover.svg);
+  cursor: pointer;
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+  transition: 0.5s ease-out
+}
+
+div.likeicon-container:active {
+  content: url(img/likeactive2.svg);
+  cursor: pointer;
+  width: 28px;
+  height: 24px;
+  transition: 0.3s ease-out
+}
+

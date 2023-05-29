@@ -520,15 +520,33 @@ article.productview {
 
 /* PRODUCT CARD STYLING */
 
-.productcardsqaure {
+.productcardsqaure,
+.productcardhorizontal,
+.productcardvertical {
   max-width: var(--w295);
   height: auto;
   background-color: var(--white1);
-
 }
 
-img.productimgsquare {
-  max-width: 100%;
+.productimgsquare {
+  object-fit: cover;
+  min-width: var(--w295);
+  min-height: var(--w295);
+  max-height: var(--w295);
+}
+
+.productimgvertical {
+  object-fit: cover;
+  min-width: var(--w295);
+  max-height: 500px;
+  height: auto;
+  width: auto;
+}
+
+.productimghorizontal {
+  object-fit: cover;
+  min-width: var(--w295);
+  min-height: 200px;
 }
 
 p.artistname {
@@ -552,7 +570,10 @@ p.price {
 }
 
 
-.productcardsqaure:hover {
+.productcardsqaure:hover,
+.productcardsqaure:hover,
+.productcardhorizontal:hover,
+.productcardvertical:hover {
   box-shadow: var(--dropShadow1);
 }
 
@@ -579,4 +600,3 @@ div.likeicon-container:active {
   height: 24px;
   transition: 0.3s ease-out
 }
-

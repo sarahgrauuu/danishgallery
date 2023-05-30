@@ -471,6 +471,45 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
   }
 }
 
+/* nav styling */
+header {
+  height: 3.725rem;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: var(--spacing10);
+  padding-right: var(--spacing10);
+}
+
+.dkgallerymblogo {
+  height: 50px;
+  width: 50px;
+}
+
+/* spacing40 in tailwind does not work :( */
+.mobileul {
+  margin-top: var(--spacing40);
+}
+
+.gem {
+  visibility: hidden;
+}
+
+.appear {
+  animation: slideIn 300ms ease-out ;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
 
 /* PRODUCT CARD BUTTON */
 
@@ -512,11 +551,6 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
 
 
 /* Article Productview */
-
-article.productview {
-  background-color: white;
-}
-
 
 /* PRODUCT CARD STYLING */
 
@@ -603,4 +637,21 @@ div.likeicon-container:active {
 
 .kimimage {
   width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  /* nav styling */
+  header {
+    height: 9.063rem;
+    width: 100%;
+  }
+
+
+
+  article.featuredart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
 }

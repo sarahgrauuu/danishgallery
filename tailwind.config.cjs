@@ -8,6 +8,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      white: "#ffffff",
       white1: "#F3F4F7",
       white2: "#E2E4E9",
       white3: "#C7CAD1",
@@ -54,6 +55,13 @@ module.exports = {
       letterSpacing: {
         bodytextletterspacing: "1%",
       },
+
+      fontSize: {
+        fontdsize18: "1.125rem",
+        standardbodysize: "1rem",
+        cardCopy14:"0.875rem",
+        largebody:"1.563rem",
+      }
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],

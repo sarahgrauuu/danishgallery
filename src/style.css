@@ -496,13 +496,14 @@ header {
 }
 
 .appear {
-  animation: slideIn 300ms ease-out ;
+  animation: slideIn 300ms ease-out;
 }
 
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -654,4 +655,35 @@ div.likeicon-container:active {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
+}
+
+
+/* artworks page */
+
+.categorname {
+  font-size: var(--standardBody);
+  font-weight: var(--bold);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.categoryitem {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: var(--smallBody);
+  font-weight: var(--medium);
+}
+
+aside.filters {
+  /* top: 3.725rem; */
+  display: grid;
+  row-gap: var(--spacing12);
+}
+
+.categoryitemscontainerflex {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing10)
+}
+
+.gem2 {
+  visibility: hidden;
 }

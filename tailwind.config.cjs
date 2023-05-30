@@ -61,6 +61,8 @@ module.exports = {
         standardbodysize: "1rem",
         cardCopy14:"0.875rem",
         largebody:"1.563rem",
+        smallbody:"0.8rem",
+        xsBody: "0.64rem",
       }
     },
   },

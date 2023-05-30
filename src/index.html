@@ -22,7 +22,7 @@
       <img class="lg:h-10" src="img/delivery.svg" alt="" />
     </div>
   </div>
-  <header class="lg:px-16 lg:flex lg:items-center border-b-2 border-b-black">
+  <header class="lg:px-spacing20 lg:flex lg:items-center border-b-2 border-b-black">
 
     <!-- DESKTOP -->
     <nav class="hidden lg:flex lg:flex-row lg:w-screen lg:justify-between">
@@ -375,6 +375,11 @@
     </section>
   </footer>
   <script type="module" src="./main.js"></script>
+  <script>
+    document.getElementById("close-btn").addEventListener("click", function () {
+      document.getElementById("banner").style.display = "none";
+    });
+  </script>
 </body>
 
 </html>

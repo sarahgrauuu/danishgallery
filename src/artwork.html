@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="lg:px-16 lg:flex lg:items-center border-b-2 border-b-black">
+    <header class="lg:px-spacing20 lg:flex lg:items-center border-b-2 border-b-black">
         <!-- DESKTOP -->
         <nav class="hidden lg:flex lg:flex-row lg:w-screen lg:justify-between">
             <div class="leftsideitemscontainer lg:flex ">
@@ -101,16 +101,18 @@
 
         </nav>
     </header>
-    <main>
-        <div class="breadcrumbs text-smallbody text-black3">ARTWORK / ALL ARTWORK </div>
-        <div id="open-filters" class="filtertogglemobile text-xsBody text-black3 ">SHOW FILTERS</div>
+    <main
+        class="px-spacing10 lg:pt-spacing40  lg:px-spacing20  lg:grid lg:grid-cols-4 lg:gap-x-spacing20 lg:gap-y-spacing20">
+        <div class="breadcrumbs text-smallbody text-black3 lg:text-standardbodysize lg:col-start-2">ARTWORK / ALL
+            ARTWORK </div>
+        <div id="open-filters" class=" filtertoggle text-xsBody text-black3 text-end lg:hidden ">SHOW FILTERS</div>
         <aside
-            class="gem2 filters fixed left-0 bottom-0 top-0 right-0 h-full w-auto bg-white1 z-50 pt-spacing20 pl-spacing10 pr-spacing10">
-            <p id="close-filters" class="text-xsBody text-black3 justify-self-end">CLOSE FILTER</p>
-            <div>
+            class="gem2 filters fixed left-0 bottom-0 top-0 right-0 h-full w-auto bg-white1 z-50 pt-spacing20 pl-spacing10 pr-spacing10 lg:visible lg:row-start-1 lg:row-span-2 lg:col-start-1 lg:col-end-2 lg:w-full lg:relative lg:bg-white lg:pt-0">
+            <p id="close-filters" class="text-xsBody text-black3 justify-self-end lg:hidden">CLOSE FILTER</p>
+            <div class="categorycontainernonflex">
                 <p class="categorname">ALL ARTWORK</p>
             </div>
-            <div>
+            <div class="categorycontainernonflex">
                 <p class="categorname">NEW ARTWORK</p>
             </div>
             <div class="categoryitemscontainerflex">
@@ -142,9 +144,9 @@
                 <P class="categoryitem">VALDEMAR</P>
             </div>
         </aside>
-        <section>
-            <article id="productcardview"
-                class=" featuredart pt-spacing40 pb-spacing40 pl-spacing10 pr-spacing10 grid grid-cols-1 justify-items-center gap-y-spacing20 items-end">
+        <section class="lg:col-start-2 lg:col-end-5 lg:justify-start">
+            <article id="productsviewartworkspage"
+                class="grid grid-cols-1 justify-items-center gap-y-spacing20 items-end">
                 <div class="productcardsqaure">
                     <a href=""><img src="img/dorte1.webp" class="productimgsquare" alt="">
                         <div class="infocontainer pr-spacing12 pl-spacing12">
@@ -163,7 +165,6 @@
                         <div class="likeicon-container"></div>
                     </div>
                 </div>
-
                 <div class="productcardhorizontal">
                     <a href=""><img src="img/valdemar/horses-at-the-north-sea-130x60cm.webp"
                             class="prodoctimghorizontal" alt="">
@@ -238,8 +239,8 @@
                         <button class="productcardbutton" aria-label="add to cart"> </button>
                         <div class="likeicon-container"></div>
                     </div>
+                </div>
             </article>
-
         </section>
 
 

@@ -640,23 +640,6 @@ div.likeicon-container:active {
   width: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
-
-  /* nav styling */
-  header {
-    height: 9.063rem;
-    width: 100%;
-  }
-
-
-
-  article.featuredart {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-}
-
 
 /* artworks page */
 
@@ -686,4 +669,73 @@ aside.filters {
 
 .gem2 {
   visibility: hidden;
+}
+
+.appear2 {
+  animation: slideInr 300ms ease-out;
+}
+
+@keyframes slideInr {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  /* nav styling */
+  header {
+    height: 9.063rem;
+    width: 100%;
+  }
+
+
+
+  article.featuredart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+
+  /* artworks page */
+
+  #productsviewartworkspage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+
+  aside.filters {
+    display: block;
+  }
+
+  .categorycontainernonflex,
+  .categoryitemscontainerflex {
+    padding-bottom: var(--spacing20);
+  }
+
+  .categorname {
+    font-size: var(--mediumBody);
+    font-weight: var(--bold);
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+  }
+
+  .categoryitem {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: var(--cardCopy14);
+    font-weight: var(--medium);
+  }
+
+  div#open-filters,
+  .filtertoggle {
+    display: none;
+  }
+
+
+
+
 }

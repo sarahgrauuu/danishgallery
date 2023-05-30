@@ -461,6 +461,11 @@ font-family: 'Plus Jakarta Sans', sans-serif;*/
 
   }
 
+  #list{
+    grid-row-start:1;
+    grid-row-end: 5;
+  }
+
   .close-btn {
     color: white;
     position: absolute;

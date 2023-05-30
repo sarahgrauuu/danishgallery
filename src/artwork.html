@@ -102,8 +102,10 @@
         </nav>
     </header>
     <main
-        class="px-spacing10 lg:pt-spacing40  lg:px-spacing20  lg:grid lg:grid-cols-4 lg:gap-x-spacing20 lg:gap-y-spacing20">
-        <div class="breadcrumbs text-smallbody text-black3 py-spacing10 lg:text-standardbodysize lg:col-start-2">ARTWORK
+        class="artworkmain px-spacing10 lg:pb-spacing200 lg:pt-spacing40  lg:px-spacing20  lg:grid lg:grid-cols-4 lg:gap-x-spacing20 lg:gap-y-spacing20">
+        <div
+            class="breadcrumbs text-smallbody text-black3 py-spacing10 lg:text-standardbodysize lg:col-start-2 lg:py-0">
+            ARTWORK
             / ALL
             ARTWORK </div>
         <div id="open-filters" class=" filtertoggle text-xsBody text-black3 text-end lg:hidden ">SHOW FILTERS</div>
@@ -111,38 +113,38 @@
             class="gem2 filters fixed left-0 bottom-0 top-0 right-0 h-full w-auto bg-white1 z-50 pt-spacing20 pl-spacing10 pr-spacing10 lg:visible lg:row-start-1 lg:row-span-2 lg:col-start-1 lg:col-end-2 lg:w-full lg:relative lg:bg-white lg:pt-0">
             <p id="close-filters" class="text-xsBody text-black3 justify-self-end lg:hidden">CLOSE FILTER</p>
             <div class="categorycontainernonflex">
-                <p class="categorname">ALL ARTWORK</p>
+                <button x-on:click="filter = 'all'" class="categorname">ALL ARTWORK</button>
             </div>
             <div class="categorycontainernonflex">
-                <p class="categorname">NEW ARTWORK</p>
+                <button x-on:click="filter = 'new'" class="categorname">NEW ARTWORK</button>
             </div>
             <div class="categoryitemscontainerflex">
-                <p class="categorname">ART CATEGORIES</p>
-                <P class="categoryitem">ABSTRACT</P>
-                <P class="categoryitem">NAIVISM</P>
-                <P class="categoryitem">NATURE</P>
-                <P class="categoryitem">PORTRAIT</P>
+                <button class="categorname">ART CATEGORIES</button>
+                <button x-on:click="category = 'abstract'" class="categoryitem">ABSTRACT</button>
+                <button x-on:click="category = 'naivism'" class="categoryitem">NAIVISM</button>
+                <button x-on:click="category = 'nature'" class="categoryitem">NATURE</button>
+                <button x-on:click="category = 'portrait'" class="categoryitem">PORTRAIT</button>
             </div>
             <div class="categoryitemscontainerflex">
-                <p class="categorname">SIZE</p>
-                <P class="categoryitem">SMALL ( MAX 40 CM )</P>
-                <P class="categoryitem">MEDIUM ( 41 - 80 CM )</P>
-                <P class="categoryitem">LARGE ( 81 - 120 CM )</P>
-                <P class="categoryitem">XLARGE ( +120CM )</P>
+                <button class="categorname">SIZE</button>
+                <button class="categoryitem">SMALL ( MAX 40 CM )</button>
+                <button class="categoryitem">MEDIUM ( 41 - 80 CM )</button>
+                <button class="categoryitem">LARGE ( 81 - 120 CM )</button>
+                <button class="categoryitem">XLARGE ( +120CM )</button>
             </div>
             <div class="categoryitemscontainerflex">
-                <p class="categorname">PRICE</p>
-                <P class="categoryitem">BELOW 2250 DKK</P>
-                <P class="categoryitem">2250 - 4500 DKK</P>
-                <P class="categoryitem">4500 - 7500 DKK</P>
-                <P class="categoryitem">ABOVE 7500 DKK</P>
+                <button class="categorname">PRICE</button>
+                <button class="categoryitem">BELOW 2250 DKK</button>
+                <button class="categoryitem">2250 - 4500 DKK</button>
+                <button class="categoryitem">4500 - 7500 DKK</button>
+                <button class="categoryitem">ABOVE 7500 DKK</button>
             </div>
             <div class="categoryitemscontainerflex">
-                <p class="categorname">ARTISTS</p>
-                <P class="categoryitem">ABDREA BENETTI</P>
-                <P class="categoryitem">CHARLOTTE BRUUN</P>
-                <P class="categoryitem">DORTE JUUL</P>
-                <P class="categoryitem">VALDEMAR</P>
+                <button class="categorname">ARTISTS</button>
+                <button class="categoryitem">ABDREA BENETTI</button>
+                <button class="categoryitem">CHARLOTTE BRUUN</button>
+                <button class="categoryitem">DORTE JUUL</button>
+                <button class="categoryitem">VALDEMAR</button>
             </div>
         </aside>
         <section class="pt-spacing40 lg:col-start-2 lg:col-end-5 lg:justify-start">
@@ -296,4 +298,5 @@
         </section>
     </footer>
     <script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"></script>
 </body>

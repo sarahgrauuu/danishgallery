@@ -4,6 +4,7 @@ module.exports = {
     "./src/**/*.{html,vue,js,ts,jsx,tsx}",
     "./src/index.html",
     "./src/artists.html",
+    "./src/artistbio.html",
     
   ],
   theme: {

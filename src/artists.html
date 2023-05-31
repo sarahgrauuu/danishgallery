@@ -14,49 +14,100 @@
 </head>
 
 <body>
-  <nav class=" mt-1 mb-1 items-center justify-between py-4 px-8 lg:flex lg:px-16">
-    <div class="flex flex-row items-center lg:flex">
-      <img class=" lg:hidden" src="img/burger.svg" alt="" />
-      <a href="index.html" aria-label="danishgallery"> <img class="m-auto h-14 lg:h-16" src="img/logo.svg" alt="" /></a>
-      <ul class="hidden standardbody2 tracking-widest lg:flex ml-2 lg:flex-grow lg:items-center lg:justify-center">
-        <!-- Menu items -->
-        <li>
-          <a href="#" class="text-black font-semibold px-4 py-2">ARTWORK</a>
-        </li>
-        <li>
-          <a href="artists.html" class="text-black font-semibold px-4 py-2">ARTISTS</a>
-        </li>
-        <li>
-          <a href="#" class="text-black font-semibold px-4 py-2">SOLD ARTWORK</a>
-        </li>
-        <li>
-          <a href="#" class="text-black font-semibold px-4 py-2">ABOUT US</a>
-        </li>
-        <li>
-          <a href="#" class="text-black font-semibold px-4 py-2">BUY A GIFT CARD</a>
-        </li>
-        <li>
-          <a href="#" class="text-orange2 font-semibold  px-4 py-2">ARE YOU AN ARTIST?</a>
-        </li>
-      </ul>
-
-      <div class=" flex items-end space-x-3  lg:flex ml-8">
-        <!-- Icons -->
-        <img class="" src="img/search.svg" alt="" /><img class="hidden lg:block mr-2 " src="img/user.svg" alt="" />
-        <img class="mr-2" src="img/heart.svg" alt="">
-        <img class="hidden lg:block " src="img/cart.svg" alt="">
+  <body class="min-w-full">
+  
+    <header class="lg:px-spacing20 lg:flex lg:items-center border-b-2 border-b-black">
+  
+      <!-- DESKTOP -->
+      <nav class="hidden lg:flex lg:flex-row lg:w-screen lg:justify-between">
+        <div class="leftsideitemscontainer lg:flex ">
+          <a href="index.html" aria-label="danishgallery logo"><img class="m-auto " src="img/logo.svg" alt="" /></a>
+          <ul class="  lg:flex lg:flex-grow lg:items-center lg:justify-center lg:gap-x-spacing20 lg:ml-spacing20">
+            <!-- Menu items -->
+            <li>
+              <a href="artwork.html" class="font-semibold text-black lg:text-fontdsize18  ">ARTWORK</a>
+            </li>
+            <li>
+              <a href="artists.html" class=" font-semibold text-black  lg:text-fontdsize18">ARTISTS</a>
+            </li>
+            <li>
+              <a href="#" class=" font-semibold text-black  lg:text-fontdsize18">SOLD ARTWORK</a>
+            </li>
+            <li>
+              <a href="#" class=" font-semibold text-black   lg:text-fontdsize18">ABOUT US</a>
+            </li>
+            <li>
+              <a href="#" class=" font-semibold text-black  lg:text-fontdsize18">BUY A GIFT CARD</a>
+            </li>
+            <li>
+              <a href="#" class=" font-semibold text-orange2  lg:text-fontdsize18">ARE YOU AN ARTIST?</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="items-center space-x-3 lg:flex order lg:order-last">
+          <!-- Icons -->
+          <img class="" src="img/search.svg" alt="" />
+          <img class="lg:block" src="img/user.svg" alt="" />
+          <img class="" src="img/navheart.svg" alt="" />
+          <img class="hidden lg:block" src="img/cart.svg" alt="" />
+        </div>
+      </nav>
+  
+      <!-- mobile -->
+      <div class=" lg:hidden grid grid-cols-3 justify-between items-center">
+        <img id="open-nav" src="img/burger.svg" alt="">
+        <a class="m-auto" href="index.html" aria-label="danishgallery logo"><img class=" dkgallerymblogo"
+            src="img/logo.svg" alt="" /></a>
+        <div class=" flex flex-row justify-end gap-x-spacing10 ">
+          <img class="" src="img/search.svg" alt="" />
+          <img class="" src="img/cart.svg" alt="" />
+        </div>
+  
       </div>
-    </div>
-
-  </nav>
-  <hr class="my-3 h-px w-100 border-0 bg-black3">
+      <nav id="overlay"
+        class="gem fixed top-0 left-0 bottom-0 right-0 h-full w-auto bg-white z-20 pt-spacing20 pl-spacing10 pr-spacing10">
+        <img id="close-nav" src="img/navclosebutton.svg" alt="">
+        <ul class=" mobileul grid grid-rows-6 justify-items-center">
+          <li class="border-b-2 border-black w-full flex justify-center	">
+            <a href="artwork.html" class="font-semibold text-black text-largebody  pb-spacing24 pt-spacing24">ARTWORK</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <a href="artists.html" class=" font-semibold text-black text-largebody pb-spacing24 pt-spacing24">ARTISTS</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <a href="#" class=" font-semibold text-black  text-largebody pb-spacing24 pt-spacing24">SOLD ARTWORK</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center pt-spacing24">
+            <a href="#" class=" font-semibold text-black  text-largebody ">ABOUT US</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <a href="#" class=" font-semibold text-black text-largebody  pb-spacing24 pt-spacing24">BUY A GIFT CARD</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <a href="#" class=" font-semibold text-orange2 text-largebody pb-spacing24 pt-spacing24">ARE YOU AN
+              ARTIST?</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <div class="flex flex-row items-center gap-x-spacing10 pb-spacing24 pt-spacing24">
+              <img src="img/user.svg" alt="">
+              <p class="font-semibold text-black text-largebody ">LOG IN</p>
+            </div>
+          </li>
+          <li class="w-full flex justify-center pb-spacing24 pt-spacing24">
+            <img src="img/navheart.svg" alt="">
+          </li>
+        </ul>
+  
+      </nav>
+    </header> 
 
   <h3 class="ml-7">ARTISTS</h3>
   <p class="flex smallbody justify-end mr-3">showing 1-10 of 98</p>
   <div
     class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-5 mt-5  lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
     <div class="text-center col-span-2 lg:col-span-1 h-20">
-      <h4>Dorte Juul</h4>
+     <a href="artistbio.html"> <h4>Dorte Juul</h4></a>
       <p class="mbodytext">Denmark</p>
     </div>
     <div class="h-52 w-52  border-solid border-x border-y border-black3" id="first"></div>

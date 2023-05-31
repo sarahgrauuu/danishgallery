@@ -648,7 +648,7 @@ div.likeicon-container:active {
 
 /* artworks page */
 
-.categorname {
+.categoryname {
   font-size: var(--standardBody);
   font-weight: var(--bold);
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -726,7 +726,7 @@ aside.filters {
     padding-bottom: var(--spacing20);
   }
 
-  .categorname {
+  .categoryname {
     font-size: var(--mediumBody);
     font-weight: var(--bold);
     font-family: "Plus Jakarta Sans", sans-serif;

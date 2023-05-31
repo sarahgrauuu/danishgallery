@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Plus+Jakarta+Sans&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
     <title>Artwork</title>
 </head>
 
@@ -102,56 +103,99 @@
         </nav>
     </header>
     <main
-        class="artworkmain px-spacing10 lg:pb-spacing200 lg:pt-spacing40  lg:px-spacing20  lg:grid lg:grid-cols-4 lg:gap-x-spacing20 lg:gap-y-spacing20">
-        <div
-            class="breadcrumbs text-smallbody text-black3 py-spacing10 lg:text-standardbodysize lg:col-start-2 lg:py-0">
-            ARTWORK
-            / ALL
-            ARTWORK </div>
+        class="artworkmain px-spacing10 lg:pb-spacing200 lg:pt-spacing40  lg:px-spacing20  lg:grid lg:grid-cols-4 lg:gap-x-spacing20 lg:gap-y-spacing20"
+        x-data="{ category: 'ALL ARTWORK', subcategory: '', selectedFilter: '', breadcrumbs: ['ARTWORK', 'ALL ARTWORK'] }">
+
+        <div class=" breadcrumbs text-smallbody text-black3 py-spacing10 lg:text-standardbodysize lg:col-start-2"
+            x-text="breadcrumbs.join(' / ')">
+
+        </div>
+
         <div id="open-filters" class=" filtertoggle text-xsBody text-black3 text-end lg:hidden ">SHOW FILTERS</div>
+
         <aside
             class="gem2 filters fixed left-0 bottom-0 top-0 right-0 h-full w-auto bg-white1 z-50 pt-spacing20 pl-spacing10 pr-spacing10 lg:visible lg:row-start-1 lg:row-span-2 lg:col-start-1 lg:col-end-2 lg:w-full lg:relative lg:bg-white lg:pt-0">
             <p id="close-filters" class="text-xsBody text-black3 justify-self-end lg:hidden">CLOSE FILTER</p>
             <div class="categorycontainernonflex">
-                <button x-on:click="filter = 'all'" class="categorname">ALL ARTWORK</button>
+                <button class="categoryname"
+                    @click="category = 'all artwork'; subcategory = ''; selectedFilter = 'allartwork'; breadcrumbs = ['ARTWORK', 'ALL ARTWORK']">ALL
+                    ARTWORK</button>
             </div>
             <div class="categorycontainernonflex">
-                <button x-on:click="filter = 'new'" class="categorname">NEW ARTWORK</button>
+                <button class="categoryname"
+                    @click="category = 'new artwork'; subcategory = ''; selectedFilter = 'newartwork'; breadcrumbs = ['ARTWORK', 'NEW ARTWORK']">NEW
+                    ARTWORK</button>
             </div>
             <div class="categoryitemscontainerflex">
-                <button class="categorname">ART CATEGORIES</button>
-                <button x-on:click="category = 'abstract'" class="categoryitem">ABSTRACT</button>
-                <button x-on:click="category = 'naivism'" class="categoryitem">NAIVISM</button>
-                <button x-on:click="category = 'nature'" class="categoryitem">NATURE</button>
-                <button x-on:click="category = 'portrait'" class="categoryitem">PORTRAIT</button>
+                <p class="categoryname">ART CATEGORIES</p>
+                <button class="categoryitem"
+                    @click="subcategory = 'ARTCATEGORY'; selectedFilter = 'ABSTRACT'; breadcrumbs = ['ARTWORK', 'ART CATEGORY', 'ABSTRACT']">ABSTRACT</button>
+                <button class="categoryitem"
+                    @click="subcategory = 'ARTCATEGORY'; selectedFilter = 'NAIVISM'; breadcrumbs = ['ARTWORK', 'ART CATEGORY', 'NAIVISM']">NAIVISM</button>
+                <button class="categoryitem"
+                    @click="category = 'ARTCATEGORY'; selectedFilter = 'nature'; breadcrumbs = ['ARTWORK', 'ART CATEGORY', 'NATURE']">NATURE</button>
+                <button class="categoryitem"
+                    @click="subcategory = 'ARTCATEGORY'; selectedFilter = 'portrait'; breadcrumbs = ['ARTWORK', 'ART CATEGORY', 'PORTRAIT']">PORTRAIT</button>
             </div>
             <div class="categoryitemscontainerflex">
-                <button class="categorname">SIZE</button>
-                <button class="categoryitem">SMALL ( MAX 40 CM )</button>
-                <button class="categoryitem">MEDIUM ( 41 - 80 CM )</button>
-                <button class="categoryitem">LARGE ( 81 - 120 CM )</button>
-                <button class="categoryitem">XLARGE ( +120CM )</button>
+                <p class="categoryname">SIZE</p>
+                <button class="categoryitem"
+                    @click="subcategory = 'SIZE'; selectedFilter = 'small'; breadcrumbs = ['ARTWORK', 'SIZE', 'SMALL (MAX 40 CM)']">SMALL
+                    ( MAX 40 CM )</button>
+                <button class="categoryitem"
+                    @click="subcategory = 'SIZE'; selectedFilter = 'medium'; breadcrumbs = ['ARTWORK', 'SIZE', 'MEDIUM ( 41 - 80 CM )']">MEDIUM
+                    ( 41 - 80 CM )</button>
+                <button class="categoryitem"
+                    @click="subcategory = 'SIZE'; selectedFilter = 'large'; breadcrumbs = ['ARTWORK', 'SIZE', 'LARGE ( 81 - 120 CM )']">LARGE
+                    ( 81 - 120 CM )
+                </button>
+                <button class="categoryitem"
+                    @click="subcategory = 'SIZE'; selectedFilter = 'xlarge'; breadcrumbs = ['ARTWORK', 'SIZE', 'XLARGE ( +120CM )']">XLARGE
+                    ( +120CM )</button>
+            </div>
+            </div>
             </div>
             <div class="categoryitemscontainerflex">
-                <button class="categorname">PRICE</button>
-                <button class="categoryitem">BELOW 2250 DKK</button>
-                <button class="categoryitem">2250 - 4500 DKK</button>
-                <button class="categoryitem">4500 - 7500 DKK</button>
-                <button class="categoryitem">ABOVE 7500 DKK</button>
+                <p class="categoryname">PRICE</p>
+                <button class="categoryitem"
+                    @click="subcategory = 'PRICE'; selectedFilter = 'low'; breadcrumbs = ['ARTWORK', 'PRICE', 'BELOW 2250 DKK']">BELOW
+                    2250 DKK</button>
+                <button class="categoryitem"
+                    @click="subcategory = 'PRICE'; selectedFilter = 'middle'; breadcrumbs = ['ARTWORK', 'PRICE', '2250 - 4500 DKK']">2250
+                    - 4500 DKK</button>
+                <button class="categoryitem"
+                    @click="subcategory = 'PRICE'; selectedFilter = 'high'; breadcrumbs = ['ARTWORK', 'PRICE', '4500 - 7500 DKK']">4500
+                    - 7500 DKK</button>
+                <button class="subcategoryitem"
+                    @click="category = 'PRICE'; selectedFilter = 'highest'; breadcrumbs = ['ARTWORK', 'PRICE', 'ABOVE 7500 DKK']">ABOVE
+                    7500 DKK</button>
             </div>
             <div class="categoryitemscontainerflex">
-                <button class="categorname">ARTISTS</button>
-                <button class="categoryitem">ABDREA BENETTI</button>
-                <button class="categoryitem">CHARLOTTE BRUUN</button>
-                <button class="categoryitem">DORTE JUUL</button>
-                <button class="categoryitem">VALDEMAR</button>
+                <p class="categoryname">ARTISTS</p>
+                <button
+                    @click="subcategory = 'ARTIST'; selectedFilter = 'andreabenetti'; breadcrumbs = ['ARTWORK', 'ARTIST', 'ANDREA BENETTI']"
+                    class="categoryitem">ANDREA BENETTI
+                </button>
+                <button
+                    @click="subcategory = 'ARTIST'; selectedFilter = 'chartlottebruun'; breadcrumbs = ['ARTWORK', 'ARTIST', 'CHARLOTTE BRUUN']"
+                    class="categoryitem">CHARLOTTE BRUUN
+                </button>
+                <button
+                    @click="subcategory = 'ARTIST'; selectedFilter = 'dortejuul'; breadcrumbs = ['ARTWORK', 'ARTIST', 'DORTE JUUL']"
+                    class="categoryitem">DORTE JUUL
+                </button>
+                <button
+                    @click="subcategory = 'ARTIST'; selectedFilter = 'valdemar'; breadcrumbs = ['ARTWORK', 'ARTIST', 'VALDEMAR']"
+                    class="categoryitem">VALDEMAR
+                </button>
             </div>
         </aside>
-        <section class="pt-spacing40 lg:col-start-2 lg:col-end-5 lg:justify-start">
+        <section id="artworkcontainer" class="pt-spacing40 lg:col-start-2 lg:col-end-5 lg:justify-start">
             <article id="productsviewartworkspage"
                 class="grid grid-cols-1 justify-items-center gap-y-spacing20 items-end">
-                <div class="productcardsqaure">
-                    <a href=""><img src="img/dorte1.webp" class="productimgsquare" alt="">
+                <div class="productcardsqaure"
+                    x-show="(category === 'ALL ARTWORK' && selectedFilter === '') || selectedFilter === 'dortejuul' || selectedFilter === 'abstract' || selectedFilter === 'high' || selectedFilter === 'large' || selectedFilter === 'newartwork' ">
+                    <a href=""><img src=" img/dorte1.webp" class="productimgsquare" alt="">
                         <div class="infocontainer pr-spacing12 pl-spacing12">
                             <p class="artistname pt-spacing20">DORTE JUUL</p>
                             <p class="artname pt-spacing20">ABSTRACTION</p>
@@ -160,6 +204,25 @@
                                 <p class="artcategory">ABSTRACT</p>
                             </div>
                             <p class="price">7500 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardsqaure"
+                    x-show="(category === 'ALL ARTWORK' && selectedFilter === '') || selectedFilter === 'dortejuul' || selectedFilter === 'abstract' || selectedFilter === 'middle' || selectedFilter === 'large' || selectedFilter === 'newartwork' ">
+                    <a href=""><img src="img/dorte2.jpg" class="productimgsquare" alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">DORTE JUUL</p>
+                            <p class="artname pt-spacing20">FEMINIST</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">50 x 60 CM</p>
+                                <p class="artcategory">ABSTRACT</p>
+                            </div>
+                            <p class="price">2700 kr</p>
                         </div>
                     </a>
                     <div
@@ -245,10 +308,6 @@
                 </div>
             </article>
         </section>
-
-
-
-
     </main>
     <!--footer starts-->
     <footer class="bg-black text-white1">
@@ -298,5 +357,6 @@
         </section>
     </footer>
     <script type="module" src="./main.js"></script>
+    <script type="module" scr="./filtering.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"></script>
 </body>

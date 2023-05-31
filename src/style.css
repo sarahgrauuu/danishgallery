@@ -151,6 +151,7 @@
   --h360: 360px;
   --h582: 582px;
   --h145: 145px;
+  --h500: 500px;
 }
 
 /* font-family: 'Playfair Display', serif;
@@ -578,7 +579,8 @@ header {
 .productimgvertical {
   object-fit: cover;
   min-width: var(--w295);
-  max-height: 500px;
+  /* max-height: var(--h500); */
+  max-height: 450px;
   height: auto;
   width: auto;
 }
@@ -660,6 +662,13 @@ div.likeicon-container:active {
   font-weight: var(--medium);
 }
 
+div#open-filters,
+.filtertoggle {
+  display: none;
+}
+
+/* Filter */
+
 aside.filters {
   /* top: 3.725rem; */
   display: grid;
@@ -672,6 +681,8 @@ aside.filters {
   align-items: flex-start;
   row-gap: var(--spacing10);
 }
+
+/* For showing and hiding in mobile view */
 
 .gem2 {
   visibility: hidden;
@@ -747,12 +758,6 @@ aside.filters {
     font-size: var(--cardCopy14);
     font-weight: var(--medium);
   }
-
-  div#open-filters,
-  .filtertoggle {
-    display: none;
-  }
-
 
 
 

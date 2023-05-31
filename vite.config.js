@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         artists: resolve(__dirname, "src/artists.html"),
+        artistbio: resolve(__dirname, "src/artistbio.html"),
       },
     },
   },

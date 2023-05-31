@@ -553,6 +553,41 @@ header {
   content: "SUCCESSFULLY ADDED";
 }
 
+/* product page button */
+
+.productpagebutton {
+  width: var(--w221);
+  height: var(--h32);
+  background-color: black;
+  color: white;
+  font-size: var(--smallBody);
+  letter-spacing: var(--letterspacing3);
+  content: "ADD TO CART";
+}
+
+.productpagebutton:hover {
+  background-color: var(--orange);
+  letter-spacing: var(--letterspacing5);
+  font-weight: var(--bold);
+  transition: 0.3s ease-out;
+
+}
+
+.productpagebutton:active {
+  background-color: var(--orange);
+  letter-spacing: var(--letterspacing3);
+  font-weight: var(--extraBold);
+  transition: 0.3s ease-out;
+}
+
+.productpagebutton:before {
+  content: "ADD TO CART";
+}
+
+.productpagebutton:active:before {
+  content: "SUCCESSFULLY ADDED";
+}
+
 
 
 

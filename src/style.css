@@ -145,12 +145,15 @@
   /* Widths */
   --w221: 221px;
   --w295: 295px;
+  --w400: 400px;
 
   /* Heights */
   --h32: 32px;
   --h360: 360px;
   --h582: 582px;
   --h145: 145px;
+  --h500: 500px;
+  --h380: 380px;
 }
 
 /* font-family: 'Playfair Display', serif;
@@ -616,7 +619,8 @@ header {
 .productimgvertical {
   object-fit: cover;
   min-width: var(--w295);
-  max-height: 500px;
+  /* max-height: var(--h500); */
+  max-height: 450px;
   height: auto;
   width: auto;
 }
@@ -679,12 +683,34 @@ div.likeicon-container:active {
   transition: 0.3s ease-out
 }
 
+.squarethumbnail {
+  height: 197px;
+  width: 197px;
+}
+
 .kimimage {
   width: 100%;
 }
 
+/* REVIEWS ON HOMEPAGE*/
 
-/* artworks page */
+/* sizes of review cards */
+.reviewcard {
+  max-width: var(--w400);
+}
+
+.reviewcardmain {
+  height: 380px;
+  max-width: var(--w400);
+  ;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>    INDEX END      <<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* >>>>>     artworks page      <<<<<< */
 
 .categoryname {
   font-size: var(--standardBody);
@@ -698,6 +724,13 @@ div.likeicon-container:active {
   font-weight: var(--medium);
 }
 
+div#open-filters,
+.filtertoggle {
+  display: none;
+}
+
+/* Filter */
+
 aside.filters {
   /* top: 3.725rem; */
   display: grid;
@@ -710,6 +743,8 @@ aside.filters {
   align-items: flex-start;
   row-gap: var(--spacing10);
 }
+
+/* For showing and hiding in mobile view */
 
 .gem2 {
   visibility: hidden;
@@ -738,6 +773,8 @@ aside.filters {
   font-weight: var(--bold);
 }
 
+/* >>>>>     artworks page end      <<<<<< */
+
 @media only screen and (min-width: 1024px) {
 
   /* nav styling */
@@ -748,9 +785,11 @@ aside.filters {
 
 
   /* Index/Homepage */
-  article.featuredart {
+  .featuredart {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    grid-auto-rows: auto;
+    column-gap: var(--spacing20);
   }
 
 
@@ -785,12 +824,6 @@ aside.filters {
     font-size: var(--cardCopy14);
     font-weight: var(--medium);
   }
-
-  div#open-filters,
-  .filtertoggle {
-    display: none;
-  }
-
 
 
 

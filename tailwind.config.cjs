@@ -64,7 +64,23 @@ module.exports = {
         largebody:"1.563rem",
         smallbody:"0.8rem",
         xsBody: "0.64rem",
-      }
+        smalldisplay: "1.953rem",
+      },
+
+      width: {
+        w167:'10.438rem',
+        w400px: '25rem',
+      },
+
+      height: {
+        h167:'10.438rem',
+        
+      },
+
+      lineHeight: {
+        lh175:'175%',
+      },
+
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],

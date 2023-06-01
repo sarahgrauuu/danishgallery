@@ -149,58 +149,57 @@
                     <p class="filterButtonText"> PORTRAIT</p>
                 </button>
             </div>
+
             <div class="categoryitemscontainerflex">
                 <p class="categoryname">SIZE</p>
+
                 <button class="categoryitem filterButton"
                     @click="subcategory = 'SIZE'; selectedFilter = 'small'; breadcrumbs = ['ARTWORK', 'SIZE', 'SMALL (MAX 40 CM)']">
-                    <p class="filterButtonText"> SMALL
-                        ( MAX 40 CM )</p>
+                    <p class="filterButtonText"> SMALL( MAX 40 CM )</p>
                 </button>
-                <button class="categoryitem"
+
+                <button class="categoryitem filterButton"
                     @click="subcategory = 'SIZE'; selectedFilter = 'medium'; breadcrumbs = ['ARTWORK', 'SIZE', 'MEDIUM ( 41 - 80 CM )']">
-                    <p class="filterButtonText"> MEDIUM
-                        ( 41 - 80 CM )</p> <button class="categoryitem filterButton"
-                        @click="subcategory = 'SIZE'; selectedFilter = 'large'; breadcrumbs = ['ARTWORK', 'SIZE', 'LARGE ( 81 - 120 CM )']">
-                        <p> LARGE
-                            ( 81 - 120 CM )</p>
-                    </button>
-                    <button class="categoryitem filterButton"
-                        @click="subcategory = 'SIZE'; selectedFilter = 'xlarge'; breadcrumbs = ['ARTWORK', 'SIZE', 'XLARGE ( +120CM )']">
-                        <p class="filterButtonText"> XLARGE
-                            ( +120CM )</p>
-                    </button>
+                    <p class="filterButtonText">MEDIUM ( 41 - 80 CM )</p>
+                </button>
+                <button class="categoryitem filterButton"
+                    @click="subcategory = 'SIZE'; selectedFilter = 'large'; breadcrumbs = ['ARTWORK', 'SIZE', 'LARGE ( 81 - 120 CM )']">
+                    <p class="filterButtonText"> LARGE ( 81 - 120 CM )</p>
+                </button>
+
+                <button class="categoryitem filterButton"
+                    @click="subcategory = 'SIZE'; selectedFilter = 'xlarge'; breadcrumbs = ['ARTWORK', 'SIZE', 'XLARGE ( +120CM )']">
+                    <p class="filterButtonText"> XLARGE ( +120CM )</p>
+                </button>
             </div>
-            </div>
-            </div>
+
+
             <div class="categoryitemscontainerflex">
                 <p class="categoryname">PRICE</p>
                 <button class="categoryitem filterButton"
                     @click="subcategory = 'PRICE'; selectedFilter = 'low'; breadcrumbs = ['ARTWORK', 'PRICE', 'BELOW 2250 DKK']">
-                    <p class="filterButtonText"> BELOW
-                        2250 DKK</p>
+                    <p class="filterButtonText"> BELOW 2250 DKK</p>
                 </button>
                 <button class="categoryitem filterButton"
                     @click="subcategory = 'PRICE'; selectedFilter = 'middle'; breadcrumbs = ['ARTWORK', 'PRICE', '2250 - 4500 DKK']">
-                    <p class="filterButtonText"> 2250
-                        - 4500 DKK</p>
+                    <p class="filterButtonText"> 2250 - 4500 DKK</p>
                 </button>
                 <button class="categoryitem filterButton"
                     @click="subcategory = 'PRICE'; selectedFilter = 'high'; breadcrumbs = ['ARTWORK', 'PRICE', '4500 - 7500 DKK']">
-                    <p class="filterButtonText"> 4500
-                        - 7500 DKK</p>
+                    <p class="filterButtonText"> 4500 - 7500 DKK </p>
                 </button>
-                <button class="subcategoryitem filterButton"
+                <button class="categoryitem filterButton"
                     @click="category = 'PRICE'; selectedFilter = 'highest'; breadcrumbs = ['ARTWORK', 'PRICE', 'ABOVE 7500 DKK']">
-                    <p class="filterButtonText"> ABOVE
-                        7500 DKK</p>
+                    <p class="filterButtonText"> ABOVE 7500 DKK</p>
                 </button>
             </div>
+
             <div class="categoryitemscontainerflex">
                 <p class="categoryname">ARTISTS</p>
                 <button
-                    @click="subcategory = 'ARTIST'; selectedFilter = 'andreabenetti'; breadcrumbs = ['ARTWORK', 'ARTIST', 'ANDREA BENETTI']"
+                    @click="subcategory = 'ARTIST'; selectedFilter = 'andreabinetti'; breadcrumbs = ['ARTWORK', 'ARTIST', 'ANDREA BENETTI']"
                     class="categoryitem filterButton">
-                    <p class="filterButtonText"> ANDREA BENETTI</p>
+                    <p class="filterButtonText"> ANDREA BINETTI</p>
                 </button>
                 <button
                     @click="subcategory = 'ARTIST'; selectedFilter = 'chartlottebruun'; breadcrumbs = ['ARTWORK', 'ARTIST', 'CHARLOTTE BRUUN']"
@@ -213,9 +212,9 @@
                     <p class="filterButtonText"> DORTE JUUL</p>
                 </button>
                 <button
-                    @click="subcategory = 'ARTIST'; selectedFilter = 'valdemar'; breadcrumbs = ['ARTWORK', 'ARTIST', 'VALDEMAR']"
+                    @click="subcategory = 'ARTIST'; selectedFilter = 'valdermar'; breadcrumbs = ['ARTWORK', 'ARTIST', 'VALDERMAR']"
                     class="categoryitem filterButton">
-                    <p class="filterButtonText"> VALDEMAR</p>
+                    <p class="filterButtonText">VALDERMAR</p>
                 </button>
             </div>
         </aside>
@@ -232,7 +231,27 @@
                                 <p class="size">100 X 120 CM</p>
                                 <p class="artcategory">ABSTRACT</p>
                             </div>
-                            <p class="price">7500 kr</p>
+                            <p class="price">7.500 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardhorizontal"
+                    x-show="( category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'andreabinetti' || selectedFilter === 'abstract' || selectedFilter === 'highest' || selectedFilter === 'medium' || selectedFilter === 'newartwork'">
+                    <a href=""><img src="img//andrea-benetti/correnti-alterne-70x50cm.webp" class="prodoctimghorizontal"
+                            alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">ANDREA BINETTI</p>
+                            <p class="artname pt-spacing20">CORRENTI ALTERNE</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">70 X 50 CM</p>
+                                <p class="artcategory">ABSTRACT</p>
+                            </div>
+                            <p class="price">19.500 kr</p>
                         </div>
                     </a>
                     <div
@@ -251,7 +270,26 @@
                                 <p class="size">50 x 60 CM</p>
                                 <p class="artcategory">ABSTRACT</p>
                             </div>
-                            <p class="price">2700 kr</p>
+                            <p class="price">2.700 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardvertical"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'andreabinetti' || selectedFilter === 'abstract' || selectedFilter === 'highest' || selectedFilter === 'medium'">
+                    <a href=""><img src="img/andrea-benetti/stella-nera-40x80.webp" class="productimgvertical" alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">ANDREA BINETTI</p>
+                            <p class="artname pt-spacing20">Stella Nera</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">40 X 80 CM</p>
+                                <p class="artcategory">ABSTRACT</p>
+                            </div>
+                            <p class="price">19.600 kr</p>
                         </div>
                     </a>
                     <div
@@ -265,12 +303,12 @@
                     <a href=""><img src="img/dorte-hjul/overthehill70x50.webp" class="prodoctimghorizontal" alt="">
                         <div class="infocontainer pr-spacing12 pl-spacing12">
                             <p class="artistname pt-spacing20">DORTE JUUL</p>
-                            <p class="artname pt-spacing20">OVER THE HILL</p>
+                            <p class="artname pt-spacing20">Over The Hill</p>
                             <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
                                 <p class="size">70 X 50 CM</p>
                                 <p class="artcategory">ABSTRACT</p>
                             </div>
-                            <p class="price">2950 kr</p>
+                            <p class="price">2.950 kr</p>
                         </div>
                     </a>
                     <div
@@ -284,12 +322,12 @@
                     <a href=""><img src="img/dorte-hjul/fourseasons-90x100.webp" class="productimgsquare" alt="">
                         <div class="infocontainer pr-spacing12 pl-spacing12">
                             <p class="artistname pt-spacing20">DORTE JUUL</p>
-                            <p class="artname pt-spacing20">FOUR SEASONS</p>
+                            <p class="artname pt-spacing20">Four Seasons</p>
                             <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
                                 <p class="size">90 X 100 CM</p>
                                 <p class="artcategory">NAIVISM</p>
                             </div>
-                            <p class="price">7500 kr</p>
+                            <p class="price">7.500 kr</p>
                         </div>
                     </a>
                     <div
@@ -303,12 +341,12 @@
                     <a href=""><img src="img/dorte-hjul/noleash-80x0-abstract.webp" class="productimgsquare" alt="">
                         <div class="infocontainer pr-spacing12 pl-spacing12">
                             <p class="artistname pt-spacing20">DORTE JUUL</p>
-                            <p class="artname pt-spacing20">NO LEASH</p>
+                            <p class="artname pt-spacing20">No Leash</p>
                             <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
                                 <p class="size">80 X 80 CM</p>
                                 <p class="artcategory">ABSTRACT</p>
                             </div>
-                            <p class="price">7500 kr</p>
+                            <p class="price">7.500 kr</p>
                         </div>
                     </a>
                     <div
@@ -317,35 +355,19 @@
                         <div class="likeicon-container"></div>
                     </div>
                 </div>
-                <!-- <div class="productcardvertical">
-                    <a href=""><img src="img/andrea-benetti/stella-nera-40x80.webp" class="productimgvertical" alt="">
-                        <div class="infocontainer pr-spacing12 pl-spacing12">
-                            <p class="artistname pt-spacing20">DORTE JUUL</p>
-                            <p class="artname pt-spacing20">ABSTRACTION</p>
-                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
-                                <p class="size">100 X 120 CM</p>
-                                <p class="artcategory">ABSTRACT</p>
-                            </div>
-                            <p class="price">7500 kr</p>
-                        </div>
-                    </a>
-                    <div
-                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
-                        <button class="productcardbutton" aria-label="add to cart"> </button>
-                        <div class="likeicon-container"></div>
-                    </div>
-                </div>
-                <div class="productcardsqaure">
+
+                <div class="productcardsqaure"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'chartlottebruun' || selectedFilter === 'nature' || selectedFilter === 'highest' || selectedFilter === 'medium'">
                     <a href=""><img src="img/charlotte-bruun/Souls-of-life-200x180cm.webp" class="productimgsquare"
                             alt="">
                         <div class="infocontainer pr-spacing12 pl-spacing12">
-                            <p class="artistname pt-spacing20">DORTE JUUL</p>
-                            <p class="artname pt-spacing20">ABSTRACTION</p>
+                            <p class="artistname pt-spacing20">CHARLOTTE BRUUN</p>
+                            <p class="artname pt-spacing20">Souls Of Life</p>
                             <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
-                                <p class="size">100 X 120 CM</p>
-                                <p class="artcategory">ABSTRACT</p>
+                                <p class="size">200 X 180 CM</p>
+                                <p class="artcategory">NATURE</p>
                             </div>
-                            <p class="price">7500 kr</p>
+                            <p class="price">29.800 kr</p>
                         </div>
                     </a>
                     <div
@@ -353,7 +375,220 @@
                         <button class="productcardbutton" aria-label="add to cart"> </button>
                         <div class="likeicon-container"></div>
                     </div>
-                </div> -->
+                </div>
+                <div class="productcardvertical"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'chartlottebruun' || selectedFilter === 'portrait' || selectedFilter === 'highest' || selectedFilter === 'large'">
+                    <a href=""><img src="img/charlotte-bruun/Line-100x120.webp" class="productimgvertical" alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">CHARLOTTE BRUUN</p>
+                            <p class="artname pt-spacing20">Line</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">100 X 120 CM</p>
+                                <p class="artcategory">PORTRAIT</p>
+                            </div>
+                            <p class="price">16.350 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardsqaure"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'chartlottebruun' || selectedFilter === 'nature' || selectedFilter === 'low' || selectedFilter === 'small'">
+                    <a href=""><img src="img/charlotte-bruun/Peaceful -120x150cm.webp" class="productimgsquare" alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">CHARLOTTE BRUUN</p>
+                            <p class="artname pt-spacing20">Peaceful</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">40 X 40 CM</p>
+                                <p class="artcategory">NATURE</p>
+                            </div>
+                            <p class="price">1.000 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardsqaure"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'valdermar' || selectedFilter === 'nature' || selectedFilter === 'highest' || selectedFilter === 'xlarge'">
+                    <a href=""><img src="img/valdemar/around-the-falls-200x180.webp" class="productimgsquare" alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">VALDERMAR</p>
+                            <p class="artname pt-spacing20">Around The Falls</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">200 X 180 CM</p>
+                                <p class="artcategory">NATURE</p>
+                            </div>
+                            <p class="price">24.900 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardvertical"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'valdermar' || selectedFilter === 'nature' || selectedFilter === 'highest' || selectedFilter === 'xlarge' ">
+                    <a href=""><img src="img//valdemar/horses-at-the-north-sea-130x60cm.webp" class="productimgvertical"
+                            alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">VALDERMAR</p>
+                            <p class="artname pt-spacing20">Horses At The North Sea</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">130 X 60 CM</p>
+                                <p class="artcategory">NATURE</p>
+                            </div>
+                            <p class="price">9.500 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardvertical"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'valdermar' || selectedFilter === 'abstract' || selectedFilter === 'high' || selectedFilter === 'large'">
+                    <a href=""><img src="img/valdemar/love-has-no-limits-55x90.webp" class="productimgvertical" alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">VALDERMAR</p>
+                            <p class="artname pt-spacing20">Love Has No Limits</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">50 X 90 CM</p>
+                                <p class="artcategory">PORTRAIT</p>
+                            </div>
+                            <p class="price">6.000 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardsqaure"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'chartlottebruun' || selectedFilter === 'portrait' || selectedFilter === 'high' || selectedFilter === 'medium' || selectedFilter === 'newartwork'">
+                    <a href=""><img src="img/charlotte-bruun/untiltled-80x80.webp" class="productimgsquare" alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">CHARLOTTE BRUUN</p>
+                            <p class="artname pt-spacing20">Untitled</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">80 X 80 CM</p>
+                                <p class="artcategory">PORTRAIT</p>
+                            </div>
+                            <p class="price">5.500 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardsqaure"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'andreabinetti' || selectedFilter === 'abstract' || selectedFilter === 'high' || selectedFilter === 'medium' || selectedFilter === 'newartwork'">
+                    <a href=""><img src="img/andrea-benetti/Giocopericoloso_2020_cm80x70.webp" class="productimgsquare"
+                            alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">ANDREA BINETTI</p>
+                            <p class="artname pt-spacing20">Gioco Pericoloso</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">70 X 80 CM</p>
+                                <p class="artcategory">PORTRAIT</p>
+                            </div>
+                            <p class="price">23.250 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardvertical"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'andreabinetti' || selectedFilter === 'nature' || selectedFilter === 'highest' || selectedFilter === 'large'">
+                    <a href=""><img src="img/andrea-benetti/rinoceronte-bianco-100x60.webp" class="productimgvertical"
+                            alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">ANDREA BINETTI</p>
+                            <p class="artname pt-spacing20">Rinocerante Bianco</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">100 X 60 CM</p>
+                                <p class="artcategory">NATURE</p>
+                            </div>
+                            <p class="price">23.250 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardvertical"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'andreabinetti' || selectedFilter === 'nature' || selectedFilter === 'highest' || selectedFilter === 'medium'">
+                    <a href=""><img src="img/andrea-benetti/correnti-alterne-70x50cm.webp" class="productimgvertical"
+                            alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">ANDREA BINETTI</p>
+                            <p class="artname pt-spacing20">Correnti Alterne</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">70 X 50 CM</p>
+                                <p class="artcategory">NATURE</p>
+                            </div>
+                            <p class="price">19.700 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardsqaure"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'valdermar' || selectedFilter === 'nature' || selectedFilter === 'medium' || selectedFilter === 'xlarge'">
+                    <a href=""><img src="img/valdemar/around-the-falls-50x60.webp" class="productimgsquare" alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">VALDERMAR</p>
+                            <p class="artname pt-spacing20">Around The Falls</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">50 X 60 CM</p>
+                                <p class="artcategory">NATURE</p>
+                            </div>
+                            <p class="price">4.000 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
+                <div class="productcardsqaure"
+                    x-show="(category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'valdermar' || selectedFilter === 'nature' || selectedFilter === 'middle' || selectedFilter === 'mdeium'">
+                    <a href=""><img src="img/valdemar/around-the-falls-50x60.webp" class="productimgsquare" alt="">
+                        <div class="infocontainer pr-spacing12 pl-spacing12">
+                            <p class="artistname pt-spacing20">VALDERMAR</p>
+                            <p class="artname pt-spacing20">Around The Falls</p>
+                            <div class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20">
+                                <p class="size">50 X 70 CM</p>
+                                <p class="artcategory">NATURE</p>
+                            </div>
+                            <p class="price">4.000 kr</p>
+                        </div>
+                    </a>
+                    <div
+                        class="ctas pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10 flex flex-row items-center justify-between">
+                        <button class="productcardbutton" aria-label="add to cart"> </button>
+                        <div class="likeicon-container"></div>
+                    </div>
+                </div>
             </article>
         </section>
     </main>

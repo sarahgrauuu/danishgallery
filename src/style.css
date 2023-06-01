@@ -85,6 +85,8 @@
   --medium: 500;
   /* Numeric Value: 500. Use for special body copy. */
 
+  --semibold: 600;
+
   --bold: 700;
   /* Numeric Value: 700. Use for strong copy and CTA Button Hover state. */
 
@@ -686,7 +688,8 @@ div.likeicon-container:active {
 }
 
 .kimimage {
-  width: 100%;
+  width: 75%;
+  margin: auto;
 }
 
 /* REVIEWS ON HOMEPAGE*/
@@ -699,9 +702,28 @@ div.likeicon-container:active {
 .reviewcardmain {
   height: 380px;
   max-width: var(--w400);
-  ;
+
 }
 
+
+button.artcategorybutton {
+  height: 48px;
+  width: 167px;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--black);
+  font-size: var(--fontSize18);
+  font-weight: var(--semibold);
+}
+
+.artcategorybutton:hover {
+  background-color: var(--black);
+  transition: 150ms ease-out;
+}
+
+.artcategorybutton:hover a {
+  color: var(--orange);
+}
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>    INDEX END      <<<<<<<<<<<<<<<<<<<<<< */

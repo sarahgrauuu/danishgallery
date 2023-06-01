@@ -5,7 +5,6 @@ module.exports = {
     "./src/index.html",
     "./src/artists.html",
     "./src/artistbio.html",
-    
   ],
   theme: {
     colors: {
@@ -54,33 +53,34 @@ module.exports = {
       },
 
       letterSpacing: {
-        bodytextletterspacing: "1%",
+        bodytextletterspacing1: "1%",
+        bodytextletterspacing3: "3%",
+        bodytextletterspacing3: "5%",
       },
 
       fontSize: {
         fontdsize18: "1.125rem",
         standardbodysize: "1rem",
-        cardCopy14:"0.875rem",
-        largebody:"1.563rem",
-        smallbody:"0.8rem",
+        cardCopy14: "0.875rem",
+        largebody: "1.563rem",
+        smallbody: "0.8rem",
         xsBody: "0.64rem",
         smalldisplay: "1.953rem",
+        xxsmalldisplay: "1.25rem",
       },
 
       width: {
-        w167:'10.438rem',
-        w400px: '25rem',
+        w167: "10.438rem",
+        w400px: "25rem",
       },
 
       height: {
-        h167:'10.438rem',
-        
+        h167: "10.438rem",
       },
 
       lineHeight: {
-        lh175:'175%',
+        lh175: "175%",
       },
-
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],

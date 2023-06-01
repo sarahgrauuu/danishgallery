@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Plus+Jakarta+Sans&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="src/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"></script>
   <title>Danish Gallery</title>
 </head>
 
@@ -156,7 +157,10 @@
     </section>
     <article id="filters" class="pt-spacing40 mx-spacing10 pb-spacing40 lg:mx-spacing20">
       <h1 class="text-smalldisplay pt-spacing40 pb-spacing40 text-center lg:text-left">Best Selling Art Categories</h1>
-      <div id="artcategorybuttons"
+      <div id="artcategorybuttons" x-data="{
+        redirectToProducts(category) {
+          window.location.href = 'artwork.html?category=' + category;}
+      }"
         class="grid grid-cols-2 justify-items-center gap-y-spacing20 gap-x-spacing20 lg:grid-cols-6 lg:grid-rows-1	">
         <button class="artcategorybutton"><a href=""> ALL ARTWORK</a></button>
         <button class="artcategorybutton"><a href=""> ABSTRACT</a></button>
@@ -166,7 +170,8 @@
         <button class="artcategorybutton"><a href=""> FANTASY</a></button>
       </div>
     </article>
-    <article class="mx-spacing10 border-b-2 border-orange grid grid-cols-1 pb-spacing40  lg:mx-spacing20 lg:pb-spacing80">
+    <article
+      class="mx-spacing10 border-b-2 border-orange grid grid-cols-1 pb-spacing40  lg:mx-spacing20 lg:pb-spacing80">
       <h1 class="text-smalldisplay pt-spacing20 text-center lg:text-left">Featured Artwork</h1>
       <div id="productcardview"
         class=" featuredart pt-spacing40 pb-spacing40 grid grid-cols-1 justify-items-center gap-y-spacing20 items-end ">
@@ -484,6 +489,7 @@
       document.getElementById("banner").style.display = "none";
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"></script>
 </body>
 
 </html>

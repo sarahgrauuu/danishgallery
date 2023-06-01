@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Plus+Jakarta+Sans&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="src/style.css" />
+  <title>Artists</title>
+  <script type="module" crossorigin src="./assets/main-4def2bb0.js"></script>
+  <link rel="stylesheet" href="./assets/main-233a1488.css">
+</head>
+
+<body>
+  <body class="min-w-full">
+  
+    <header class="lg:px-spacing20 lg:flex lg:items-center border-b-2 border-b-black">
+  
+      <!-- DESKTOP -->
+      <nav class="hidden lg:flex lg:flex-row lg:w-screen lg:justify-between">
+        <div class="leftsideitemscontainer lg:flex ">
+          <a href="index.html" aria-label="danishgallery logo"><img class="m-auto " src="./assets/logo-062f857d.svg" alt="" /></a>
+          <ul class="  lg:flex lg:flex-grow lg:items-center lg:justify-center lg:gap-x-spacing20 lg:ml-spacing20">
+            <!-- Menu items -->
+            <li>
+              <a href="artwork.html" class="font-semibold text-black lg:text-fontdsize18  ">ARTWORK</a>
+            </li>
+            <li>
+              <a href="artists.html" class=" font-semibold text-black  lg:text-fontdsize18">ARTISTS</a>
+            </li>
+            <li>
+              <a href="#" class=" font-semibold text-black  lg:text-fontdsize18">SOLD ARTWORK</a>
+            </li>
+            <li>
+              <a href="#" class=" font-semibold text-black   lg:text-fontdsize18">ABOUT US</a>
+            </li>
+            <li>
+              <a href="#" class=" font-semibold text-black  lg:text-fontdsize18">BUY A GIFT CARD</a>
+            </li>
+            <li>
+              <a href="#" class=" font-semibold text-orange2  lg:text-fontdsize18">ARE YOU AN ARTIST?</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="items-center space-x-3 lg:flex order lg:order-last">
+          <!-- Icons -->
+          <img class="" src="./assets/search-8da76fa6.svg" alt="" />
+          <img class="lg:block" src="./assets/user-330f1a2c.svg" alt="" />
+          <img class="" src="./assets/navheart-4dc646fa.svg" alt="" />
+          <img class="hidden lg:block" src="./assets/cart-fc6b39df.svg" alt="" />
+        </div>
+      </nav>
+  
+      <!-- mobile -->
+      <div class=" lg:hidden grid grid-cols-3 justify-between items-center">
+        <img id="open-nav" src="./assets/burger-5bc38dc6.svg" alt="">
+        <a class="m-auto" href="index.html" aria-label="danishgallery logo"><img class=" dkgallerymblogo"
+            src="./assets/logo-062f857d.svg" alt="" /></a>
+        <div class=" flex flex-row justify-end gap-x-spacing10 ">
+          <img class="" src="./assets/search-8da76fa6.svg" alt="" />
+          <img class="" src="./assets/cart-fc6b39df.svg" alt="" />
+        </div>
+  
+      </div>
+      <nav id="overlay"
+        class="gem fixed top-0 left-0 bottom-0 right-0 h-full w-auto bg-white z-20 pt-spacing20 pl-spacing10 pr-spacing10">
+        <img id="close-nav" src="./assets/navclosebutton-76e376b5.svg" alt="">
+        <ul class=" mobileul grid grid-rows-6 justify-items-center">
+          <li class="border-b-2 border-black w-full flex justify-center	">
+            <a href="artwork.html" class="font-semibold text-black text-largebody  pb-spacing24 pt-spacing24">ARTWORK</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <a href="artists.html" class=" font-semibold text-black text-largebody pb-spacing24 pt-spacing24">ARTISTS</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <a href="#" class=" font-semibold text-black  text-largebody pb-spacing24 pt-spacing24">SOLD ARTWORK</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center pt-spacing24">
+            <a href="#" class=" font-semibold text-black  text-largebody ">ABOUT US</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <a href="#" class=" font-semibold text-black text-largebody  pb-spacing24 pt-spacing24">BUY A GIFT CARD</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <a href="#" class=" font-semibold text-orange2 text-largebody pb-spacing24 pt-spacing24">ARE YOU AN
+              ARTIST?</a>
+          </li>
+          <li class="border-b-2 border-black w-full flex justify-center">
+            <div class="flex flex-row items-center gap-x-spacing10 pb-spacing24 pt-spacing24">
+              <img src="./assets/user-330f1a2c.svg" alt="">
+              <p class="font-semibold text-black text-largebody ">LOG IN</p>
+            </div>
+          </li>
+          <li class="w-full flex justify-center pb-spacing24 pt-spacing24">
+            <img src="./assets/navheart-4dc646fa.svg" alt="">
+          </li>
+        </ul>
+  
+      </nav>
+    </header> 
+
+  <h3 class="ml-7">ARTISTS</h3>
+  <p class="flex smallbody justify-end mr-3">showing 1-10 of 98</p>
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-5 mt-5  lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+     <a href="artistbio.html"> <h4>Dorte Juul</h4></a>
+      <p class="mbodytext">Denmark</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="first"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="second"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="third"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="fourth"></div>
+  </div>
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-6 mt-4   lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+      <h4>Lone Reedtz</h4>
+      <p class="mbodytext">Denmark</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="one"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="two"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="three"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="four"></div>
+  </div>
+
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-6 mt-4   lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+      <h4>Daisy Dahl</h4>
+      <p class="mbodytext">Denmark</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="un"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="deux"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="trois"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="quatre"></div>
+  </div>
+
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-6 mt-4   lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+      <h4>Ingelise Hansen</h4>
+      <p class="mbodytext">Denmark</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="uno"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="dos"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="tres"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="quatro"></div>
+  </div>
+
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-6 mt-4   lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+      <h4>Marvin Wagner</h4>
+      <p class="mbodytext">Germany</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="ein"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="zwei"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="drei"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="vier"></div>
+  </div>
+
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-6 mt-4   lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+      <h4>Stanislav Lazarov</h4>
+      <p class="mbodytext">Bulgaria</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="unu"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="doi"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="trei"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="patru"></div>
+  </div>
+
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-6 mt-4   lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+      <h4>Mariya Yugina</h4>
+      <p class="mbodytext">Romania</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="en"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="to"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="tre"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="fire"></div>
+  </div>
+
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-6 mt-4   lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+      <h4>Tina Jensen</h4>
+      <p class="mbodytext">Canada</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="tina1"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="tina2"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="tina3"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="tina4"></div>
+  </div>
+
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-6 mt-4   lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center"
+    id="Hanne">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+      <h4>Hanne Kondziella</h4>
+      <p class="mbodytext">Norway</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="hanne1"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="hanne2"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="hanne3"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="hanne4"></div>
+  </div>
+
+  <div
+    class="grid grid-cols-2 grid-rows-3 gap-6  place-items-center mb-24 mt-4   lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:items-center">
+    <div class="text-center col-span-2 lg:col-span-1 h-20">
+      <h4>Valdemar</h4>
+      <p class="mbodytext">Denmark</p>
+    </div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="vald1"></div>
+    <div class=" h-52 w-52  border-solid border-x border-y border-black3" id="vald2"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="vald3"></div>
+    <div class="h-52 w-52  border-solid border-x border-y border-black3" id="vald4"></div>
+  </div>
+
+  <p class="standardbody text-center mb-5">1, 2, 3, 4, 5, 6, 7, 8, 9 >></p>
+
+  <footer class="bg-black text-white1">
+    <div class="flex flex-col items-center gap-4 lg:grid lg:grid-cols-3">
+      <div class="smallbody lg:standardbody">
+        <div class="mx-auto mt-5 inline-block lg:ml-16">
+          <p class="lg:mbodytext text-orange2">Danish Gallery</p>
+          <hr class="my-3 h-px w-32 border-0 bg-orange2" />
+
+          <p>Gallery Landlystvej 146,</p>
+          <p>6715 Esbjerg N - Denmark</p>
+          <p>+45 26 66 5605</p>
+          <p>info@danishgallery.com</p>
+          <p>CVR: 26965632DK</p>
+          <p>Nykredit Bank: 5479</p>
+          <p>0004427960</p>
+        </div>
+      </div>
+      <div class="lg:m-auto">
+        <p class="smallbody lg:standardbody pt-12 text-center tracking-widest">
+          SIGN UP TO THE NEWSLETTER
+        </p>
+        <div class="lg: mt-4 h-12 w-64 items-center bg-white1 outline outline-2 outline-offset-0 outline-orange2"></div>
+      </div>
+      <div class="mt-12">
+        <div class="grid grid-cols-2">
+          <div class="smallbody mx-auto">
+            <p>About us</p>
+            <p class="mt-3">Art for business</p>
+            <p class="mt-3">Contact</p>
+          </div>
+          <div class="smallbody ml-6">
+            <p>FAQ</p>
+            <p class="mt-3">Trustpilot</p>
+            <p class="mt-3">Buy a gift card</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="mt-12">
+      <img class="mx-auto" src="./assets/paysystems-163222c6.svg" alt="" />
+      <div class="mt-7 mr-8 flex flex-row justify-center pb-4 lg:justify-end">
+        <img src="./assets/faceb-d959c606.svg" alt="" /> <img src="./assets/ig-e36b7362.svg" alt="" />
+      </div>
+    </section>
+  </footer>
+  
+</body>
+
+</html>

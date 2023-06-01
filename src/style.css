@@ -145,6 +145,7 @@
   /* Widths */
   --w221: 221px;
   --w295: 295px;
+  --w400: 400px;
 
   /* Heights */
   --h32: 32px;
@@ -152,6 +153,7 @@
   --h582: 582px;
   --h145: 145px;
   --h500: 500px;
+  --h380: 380px;
 }
 
 /* font-family: 'Playfair Display', serif;
@@ -678,12 +680,34 @@ div.likeicon-container:active {
   transition: 0.3s ease-out
 }
 
+.squarethumbnail {
+  height: 197px;
+  width: 197px;
+}
+
 .kimimage {
   width: 100%;
 }
 
+/* REVIEWS ON HOMEPAGE*/
 
-/* artworks page */
+/* sizes of review cards */
+.reviewcard {
+  max-width: var(--w400);
+}
+
+.reviewcardmain {
+  height: 380px;
+  max-width: var(--w400);
+  ;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>    INDEX END      <<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* >>>>>     artworks page      <<<<<< */
 
 .categoryname {
   font-size: var(--standardBody);
@@ -746,6 +770,8 @@ aside.filters {
   font-weight: var(--bold);
 }
 
+/* >>>>>     artworks page end      <<<<<< */
+
 @media only screen and (min-width: 1024px) {
 
   /* nav styling */
@@ -756,9 +782,11 @@ aside.filters {
 
 
   /* Index/Homepage */
-  article.featuredart {
+  .featuredart {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    grid-auto-rows: auto;
+    column-gap: var(--spacing20);
   }
 
 

@@ -157,17 +157,14 @@
     </section>
     <article id="filters" class="pt-spacing40 mx-spacing10 pb-spacing40 lg:mx-spacing20">
       <h1 class="text-smalldisplay pt-spacing40 pb-spacing40 text-center lg:text-left">Best Selling Art Categories</h1>
-      <div id="artcategorybuttons" x-data="{
-        redirectToProducts(category) {
-          window.location.href = 'artwork.html?category=' + category;}
-      }"
+      <div id="artcategorybuttons"
         class="grid grid-cols-2 justify-items-center gap-y-spacing20 gap-x-spacing20 lg:grid-cols-6 lg:grid-rows-1	">
-        <button class="artcategorybutton"><a href=""> ALL ARTWORK</a></button>
-        <button class="artcategorybutton"><a href=""> ABSTRACT</a></button>
-        <button class="artcategorybutton"><a href=""> NAIVISM</a></button>
-        <button class="artcategorybutton"><a href=""> NATURE</a></button>
-        <button class="artcategorybutton"><a href=""> PORTRAIT</a></button>
-        <button class="artcategorybutton"><a href=""> FANTASY</a></button>
+        <a href="artwork.html" class=" artcategorybutton"> ALL ARTWORK</a>
+        <a href="artwork.html" class=" artcategorybutton"> ABSTRACT</a>
+        <a href="artwork.html" class=" artcategorybutton"> NAIVISM</a>
+        <a href="artwork.html" class=" artcategorybutton"> NATURE</a>
+        <a href="artwork.html" class=" artcategorybutton"> PORTRAIT</a>
+        <a href="#" class=" artcategorybutton"> FANTASY</a>
       </div>
     </article>
     <article
@@ -484,12 +481,6 @@
     </section>
   </footer>
   <script type="module" src="./main.js"></script>
-  <script>
-    document.getElementById("close-btn").addEventListener("click", function () {
-      document.getElementById("banner").style.display = "none";
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"></script>
 </body>
 
 </html>

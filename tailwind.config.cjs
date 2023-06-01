@@ -6,6 +6,7 @@ module.exports = {
     "./src/artists.html",
     "./src/artistbio.html",
     "./src/artwork.html",
+    "./src/productpage.html",
   ],
   theme: {
     colors: {

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Danish Gallery</title>
+    <script type="module" crossorigin src="./assets/main-4def2bb0.js"></script>
+    <link rel="stylesheet" href="./assets/main-233a1488.css">
+  </head>
+
+  <body>
+    
+    <header class="border-b-2 border-b-black lg:flex lg:items-center lg:px-16">
+      <!-- DESKTOP -->
+      <nav class="hidden lg:flex lg:w-screen lg:flex-row lg:justify-between">
+        <div class="leftsideitemscontainer lg:flex">
+          <a href="index.html" aria-label="danishgallery logo"
+            ><img class="m-auto" src="./assets/logo-062f857d.svg" alt=""
+          /></a>
+          <ul
+            class="lg:ml-spacing20 lg:flex lg:flex-grow lg:items-center lg:justify-center lg:gap-x-spacing20"
+          >
+            <!-- Menu items -->
+            <li>
+              <a href="#" class="font-semibold text-black lg:text-fontdsize18"
+                >ARTWORK</a
+              >
+            </li>
+            <li>
+              <a
+                href="artists.html"
+                class="font-semibold text-black lg:text-fontdsize18"
+                >ARTISTS</a
+              >
+            </li>
+            <li>
+              <a href="#" class="font-semibold text-black lg:text-fontdsize18"
+                >SOLD ARTWORK</a
+              >
+            </li>
+            <li>
+              <a href="#" class="font-semibold text-black lg:text-fontdsize18"
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a href="#" class="font-semibold text-black lg:text-fontdsize18"
+                >BUY A GIFT CARD</a
+              >
+            </li>
+            <li>
+              <a href="#" class="font-semibold text-orange2 lg:text-fontdsize18"
+                >ARE YOU AN ARTIST?</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="order items-center space-x-3 lg:order-last lg:flex">
+          <!-- Icons -->
+          <img class="" src="./assets/search-8da76fa6.svg" alt="" />
+          <img class="lg:block" src="./assets/user-330f1a2c.svg" alt="" />
+          <img class="" src="./assets/navheart-4dc646fa.svg" alt="" />
+          <img class="hidden lg:block" src="./assets/cart-fc6b39df.svg" alt="" />
+        </div>
+      </nav>
+
+      <!-- mobile -->
+      <div class="grid grid-cols-3 items-center justify-between lg:hidden">
+        <img id="open-nav" src="./assets/burger-5bc38dc6.svg" alt="" />
+        <a class="m-auto" href="index.html" aria-label="danishgallery logo"
+          ><img class="dkgallerymblogo" src="./assets/logo-062f857d.svg" alt=""
+        /></a>
+        <div class="flex flex-row justify-end gap-x-spacing10">
+          <img class="" src="./assets/search-8da76fa6.svg" alt="" />
+          <img class="" src="./assets/cart-fc6b39df.svg" alt="" />
+        </div>
+      </div>
+      <nav
+        id="overlay"
+        class="gem fixed top-0 left-0 bottom-0 right-0 z-20 h-full w-auto bg-white pt-spacing20 pl-spacing10 pr-spacing10"
+      >
+        <img id="close-nav" src="./assets/navclosebutton-76e376b5.svg" alt="" />
+        <ul class="mobileul grid grid-rows-6 justify-items-center">
+          <li class="flex w-full justify-center border-b-2 border-black">
+            <a
+              href="#"
+              class="pb-spacing24 pt-spacing24 text-largebody font-semibold text-black"
+              >ARTWORK</a
+            >
+          </li>
+          <li class="flex w-full justify-center border-b-2 border-black">
+            <a
+              href="artists.html"
+              class="pb-spacing24 pt-spacing24 text-largebody font-semibold text-black"
+              >ARTISTS</a
+            >
+          </li>
+          <li class="flex w-full justify-center border-b-2 border-black">
+            <a
+              href="#"
+              class="pb-spacing24 pt-spacing24 text-largebody font-semibold text-black"
+              >SOLD ARTWORK</a
+            >
+          </li>
+          <li
+            class="flex w-full justify-center border-b-2 border-black pt-spacing24"
+          >
+            <a href="#" class="text-largebody font-semibold text-black"
+              >ABOUT US</a
+            >
+          </li>
+          <li class="flex w-full justify-center border-b-2 border-black">
+            <a
+              href="#"
+              class="pb-spacing24 pt-spacing24 text-largebody font-semibold text-black"
+              >BUY A GIFT CARD</a
+            >
+          </li>
+          <li class="flex w-full justify-center border-b-2 border-black">
+            <a
+              href="#"
+              class="pb-spacing24 pt-spacing24 text-largebody font-semibold text-orange2"
+              >ARE YOU AN ARTIST?</a
+            >
+          </li>
+          <li class="flex w-full justify-center border-b-2 border-black">
+            <div
+              class="flex flex-row items-center gap-x-spacing10 pb-spacing24 pt-spacing24"
+            >
+              <img src="./assets/user-330f1a2c.svg" alt="" />
+              <p class="text-largebody font-semibold text-black">LOG IN</p>
+            </div>
+          </li>
+          <li class="flex w-full justify-center pb-spacing24 pt-spacing24">
+            <img src="./assets/navheart-4dc646fa.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="mt-5 gap-y-2 lg:grid lg:grid-cols-4">
+          <div
+            class="xsbody ml-2 text-left tracking-widest lg:col-span-3 lg:col-start-2 lg:row-span-1"
+          >
+            <p class="inline">HOME/</p>
+            <p class="inline">ARTISTS/</p>
+            <p class="inline">DORTE JUUL</p>
+            <img class="mt-5" src="./assets/juul3-30c0e55d.svg" alt="" />
+          </div>
+
+          <div class="lg:col-span-3 lg:col-start-2">
+            <h1 class="text-center lg:text-left">Dorte Juul</h1>
+          </div>
+          <div class="my-4 lg:col-start-2 lg:my-2">
+            <div
+              class="flex grid-rows-2 flex-col items-center lg:place-items-start"
+            >
+              <div class="inline-flex">
+                <p class="standardbody text-orange3">FOLLOW</p>
+                <img class="ml-2" src="./assets/follow-85ebc105.svg" alt="" />
+              </div>
+              <div class="inline-flex">
+                <p class="standardbody text-orange3">SHARE</p>
+                <img class="ml-2" src="./assets/follow2-a0545ecc.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="mx-5 my-2 text-left lg:col-span-3 lg:col-start-2 lg:mx-0">
+            <p class="standardbody">
+              Dorte Juul goes to Guldborgsund Art School in the 5th year now,
+              and actively participates in courses/exhibitions. She is 56 years
+              old, active nurse, lives in South Zealand and besides painting,
+              she loves being with her family and enjoying their summer house.
+              Dorte loves new challenges, and therefore likes to paint to order,
+              with her own style.
+            </p>
+            <p class="xsdisplay my-3 text-black1 lg:text-orange">
+              “My art is original, I love to unfold my creative thoughts and get
+              them on canvas. I get inspired by many everyday experiences and
+              stay in the present when I paint. I love using colors, painting
+              original works as well as abstract ones. I like to paint orders,
+              though with my own artistic touch on the painting.”
+            </p>
+          </div>
+          <div
+            class="mbodytext col-start-1 mx-auto hidden list-none space-y-spacing12 lg:block"
+            id="list"
+          >
+            <li class="font-bold">ALL ARTISTS</li>
+            <li class="font-bold">ARTISTS</li>
+            <li>Andrea Benetti</li>
+            <li>Anna Gade</li>
+            <li>Annemette Nielsen</li>
+            <li>Birthe Villaume</li>
+            <li>Charlotte Bruun</li>
+            <li>Charlotte Bjørlig</li>
+            <li>Dorte Juul</li>
+            <li>Daisy Dahl</li>
+            <li>ARTIST NAME</li>
+            <li>ARTIST NAME</li>
+          </div>
+        </div>
+      </section>
+      <div class="pt-spacing20 lg:pb-spacing100">
+        <h3 class="text-center lg:text-left lg:ml-6">Artwork by Dorte Juul</h3>
+        <article
+          id="productcardview"
+          class="featuredart grid grid-cols-1 items-end justify-items-center gap-y-spacing20 pt-spacing40 pb-spacing40 pl-spacing10 pr-spacing10"
+        >
+          <div class="productcardsqaure">
+            <a href="productpage.html"
+              ><img src="./assets/dorte1-a5e86fa0.webp" class="productimgsquare" alt="" />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">ABSTRACTION</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">100 X 120 CM</p>
+                  <p class="artcategory">ABSTRACT</p>
+                </div>
+                <p class="price">8200 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/paradise-d115bbba.svg"
+                class="prodoctimghorizontal"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">PARADISE</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">100 X 100 CM</p>
+                  <p class="artcategory">NATURE</p>
+                </div>
+                <p class="price">6800 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/cremesunset-67eb28ab.svg"
+                class="productimgsquare"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">Creme De Sunset</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">50 X 50 CM</p>
+                  <p class="artcategory">NATURE</p>
+                </div>
+                <p class="price">1900 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/noleash-80x0-abstract-704dc63c.webp"
+                class="productimgvertical"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">No leash</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">80 X 80 CM</p>
+                  <p class="artcategory">ABSTRACT</p>
+                </div>
+                <p class="price">5300 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/bemyfriend-8a852f55.svg"
+                class="productimgsquare"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">Be my friend</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">60 X 80 CM</p>
+                  <p class="artcategory">ABSTRACT</p>
+                </div>
+                <p class="price">3800 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/redcity-ba4f29e9.svg"
+                class="productimgsquare"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">Red City</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">60 X 80 CM</p>
+                  <p class="artcategory">LANDSCAPE</p>
+                </div>
+                <p class="price">3800 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/decomposed-cd648942.svg"
+                class="productimgsquare"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">Decomposed</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">300 X 300 CM</p>
+                  <p class="artcategory">ABSTRACT</p>
+                </div>
+                <p class="price">2850 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/berlin-cc5cc267.svg"
+                class="productimgsquare"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">Berlin Marathon</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">80 X 80 CM</p>
+                  <p class="artcategory">FIGURES</p>
+                </div>
+                <p class="price">40000 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/dorte2-10264c00.jpg"
+                class="productimgsquare"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">Feminist</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">50 X 60 CM</p>
+                  <p class="artcategory">ABSTRACT</p>
+                </div>
+                <p class="price">2700 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/softtone-50a1142f.svg"
+                class="productimgsquare"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">Soft Tone</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">100 X 120 CM</p>
+                  <p class="artcategory">ABSTRACT</p>
+                </div>
+                <p class="price">6800 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/theredline-fb150759.svg"
+                class="productimgsquare"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">The Red Line</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">60 X 80 CM</p>
+                  <p class="artcategory">ABSTRACT</p>
+                </div>
+                <p class="price">2800 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+          <div class="productcardsqaure">
+            <a href=""
+              ><img
+                src="./assets/theroom-f7ad8b87.webp"
+                class="productimgsquare"
+                alt=""
+              />
+              <div class="infocontainer pr-spacing12 pl-spacing12">
+                <p class="artistname pt-spacing20">DORTE JUUL</p>
+                <p class="artname pt-spacing20">The Room</p>
+                <div
+                  class="flex flex-row gap-x-spacing10 pt-spacing14 pb-spacing20"
+                >
+                  <p class="size">60 X 80 CM</p>
+                  <p class="artcategory">ABSTRACT</p>
+                </div>
+                <p class="price">2600 kr</p>
+              </div>
+            </a>
+            <div
+              class="ctas flex flex-row items-center justify-between pr-spacing12 pl-spacing12 pt-spacing14 pb-spacing10"
+            >
+              <button
+                class="productcardbutton"
+                aria-label="add to cart"
+              ></button>
+              <div class="likeicon-container"></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="pageindicator"></div>
+      </div>
+    </main>
+    <!--footer starts-->
+    <footer class="bg-black text-white1">
+      <div class="flex flex-col items-center gap-4 lg:grid lg:grid-cols-3">
+        <div class="smallbody lg:standardbody">
+          <div class="mx-auto mt-5 inline-block lg:ml-16">
+            <p class="lg:mbodytext text-orange2">Danish Gallery</p>
+            <hr class="my-3 h-px w-32 border-0 bg-orange2" />
+
+            <p>Gallery Landlystvej 146,</p>
+            <p>6715 Esbjerg N - Denmark</p>
+            <p>+45 26 66 5605</p>
+            <p>info@danishgallery.com</p>
+            <p>CVR: 26965632DK</p>
+            <p>Nykredit Bank: 5479</p>
+            <p>0004427960</p>
+          </div>
+        </div>
+        <div class="lg:m-auto">
+          <p
+            class="smallbody lg:standardbody pt-12 text-center tracking-widest"
+          >
+            SIGN UP TO THE NEWSLETTER
+          </p>
+          <div
+            class="lg: mt-4 h-12 w-64 items-center bg-white1 outline outline-2 outline-offset-0 outline-orange2"
+          ></div>
+        </div>
+        <div class="mt-12">
+          <div class="grid grid-cols-2">
+            <div class="smallbody mx-auto">
+              <p>About us</p>
+              <p class="mt-3">Art for business</p>
+              <p class="mt-3">Contact</p>
+            </div>
+            <div class="smallbody ml-6">
+              <p>FAQ</p>
+              <p class="mt-3">Trustpilot</p>
+              <p class="mt-3">Buy a gift card</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="mt-12">
+        <img class="mx-auto" src="./assets/paysystems-163222c6.svg" alt="" />
+        <div class="mt-7 mr-8 flex flex-row justify-center pb-4 lg:justify-end">
+          <img src="./assets/faceb-d959c606.svg" alt="" /> <img src="./assets/ig-e36b7362.svg" alt="" />
+        </div>
+      </section>
+    </footer>
+    
+  </body>
+</html>

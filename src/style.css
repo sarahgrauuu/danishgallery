@@ -592,6 +592,9 @@ header {
   content: "SUCCESSFULLY ADDED";
 }
 
+.added-icon{
+  background-image: url(img/cartfull.svg);
+}
 
 
 

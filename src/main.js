@@ -38,3 +38,6 @@ closeFilters.addEventListener("click", function () {
   filters.classList.toggle("gem2");
   filters.classList.remove("appear2");
 });
+
+// add to cart product page //
+

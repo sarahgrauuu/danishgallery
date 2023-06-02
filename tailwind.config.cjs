@@ -69,6 +69,7 @@ module.exports = {
         xsBody: "0.64rem",
         smalldisplay: "1.953rem",
         xxsmalldisplay: "1.25rem",
+        mDisplay: "2.41rem",
       },
 
       width: {

@@ -104,7 +104,10 @@
     </header>
     <main
         class="artworkmain px-spacing10 lg:pb-spacing200 lg:pt-spacing40  lg:px-spacing20  lg:grid lg:grid-cols-4 lg:gap-x-spacing20 lg:gap-y-spacing20"
-        x-data="{ category: 'ALL ARTWORK', subcategory: '', selectedFilter: '', breadcrumbs: ['ARTWORK', 'ALL ARTWORK'] }">
+        x-data="{ category: 'ALL ARTWORK', 
+        subcategory: '', 
+        selectedFilter: '', 
+        breadcrumbs: ['ARTWORK', 'ALL ARTWORK'] }">
 
         <div class=" breadcrumbs text-smallbody text-black3 py-spacing10 lg:text-standardbodysize lg:col-start-2"
             x-text="breadcrumbs.join(' / ')">
@@ -141,7 +144,7 @@
                     <p class="filterButtonText"> NAIVISM</p>
                 </button>
                 <button class="categoryitem filterButton"
-                    @click="category = 'ARTCATEGORY'; selectedFilter = 'nature'; breadcrumbs = ['ARTWORK', 'ART CATEGORY', 'NATURE']">
+                    @click="subcategory = 'ARTCATEGORY'; selectedFilter = 'nature'; breadcrumbs = ['ARTWORK', 'ART CATEGORY', 'NATURE']">
                     <p class="filterButtonText"> NATURE</p>
                 </button>
                 <button class="categoryitem filterButton"
@@ -221,8 +224,11 @@
         <section id="artworkcontainer" class="pt-spacing40 lg:col-start-2 lg:col-end-5 lg:justify-start">
             <article id="productsviewartworkspage"
                 class="grid grid-cols-1 justify-items-center gap-y-spacing20 items-end">
-                <div class="productcardsqaure"
-                    x-show="( category === 'allartwork' || selectedFilter ==='') || selectedFilter === 'dortejuul' || selectedFilter === 'abstract' || selectedFilter === 'high' || selectedFilter === 'large' ">
+                <div class="productcardsqaure" x-show="( category === 'allartwork' || 
+                    selectedFilter ==='') || 
+                    selectedFilter === 'dortejuul' || 
+                    selectedFilter === 'abstract' || 
+                    selectedFilter === 'high' || selectedFilter === 'large' ">
                     <a href=""><img src=" img/dorte1.webp" class="productimgsquare" alt="">
                         <div class="infocontainer pr-spacing12 pl-spacing12">
                             <p class="artistname pt-spacing20">DORTE JUUL</p>

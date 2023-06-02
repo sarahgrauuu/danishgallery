@@ -527,8 +527,8 @@ header {
 .productcardbutton {
   width: var(--w221);
   height: var(--h32);
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   font-size: var(--smallBody);
   letter-spacing: var(--letterspacing3);
   content: "ADD TO CART";
@@ -652,7 +652,6 @@ p.price {
   font-weight: var(--medium);
   font-size: var(--cardCopy14);
 }
-
 
 .productcardsqaure:hover,
 .productcardsqaure:hover,

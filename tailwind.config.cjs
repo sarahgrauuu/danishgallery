@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html,vue,js,ts,jsx,tsx}",
+    "./src/**/*.{html,vue,js,ts,jsx,tsx,xml}",
     "./src/index.html",
     "./src/artists.html",
     "./src/artistbio.html",
     "./src/artwork.html",
     "./src/productpage.html",
+    "./src/sitemap.html",
+    "./src/danishgallerysitemap.xml",
   ],
   theme: {
     colors: {

@@ -7,6 +7,36 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
+<url>
+  <loc>http://mgcv.dk/danish_gallery/index.html</loc>
+  <lastmod>2023-06-02T01:59:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://mgcv.dk/danish_gallery/artwork.html</loc>
+  <lastmod>2023-06-02T01:59:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgcv.dk/danish_gallery/artists.html</loc>
+  <lastmod>2023-06-02T01:59:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgcv.dk/danish_gallery/productpage.html</loc>
+  <lastmod>2023-06-02T01:59:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgcv.dk/danish_gallery/sitemap.html</loc>
+  <lastmod>2023-06-02T01:59:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgcv.dk/danish_gallery/artistbio.html</loc>
+  <lastmod>2023-06-02T01:59:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 
 </urlset>

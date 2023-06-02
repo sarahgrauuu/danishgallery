@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Plus+Jakarta+Sans&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"></script>
+    <title>Danish Gallery</title>
+</head>
+
+<body class="min-w-full">
+    <header class="lg:px-spacing20 lg:flex lg:items-center border-b-2 border-b-black">
+
+        <!-- DESKTOP -->
+        <nav class="hidden lg:flex lg:flex-row lg:w-screen lg:justify-between">
+            <div class="leftsideitemscontainer lg:flex ">
+                <a href="index.html" aria-label="danishgallery logo"><img class="m-auto " src="img/logo.svg"
+                        alt="" /></a>
+                <ul class="  lg:flex lg:flex-grow lg:items-center lg:justify-center lg:gap-x-spacing20 lg:ml-spacing20">
+                    <!-- Menu items -->
+                    <li>
+                        <a href="artwork.html" class="font-semibold text-black lg:text-fontdsize18  ">ARTWORK</a>
+                    </li>
+                    <li>
+                        <a href="artists.html" class=" font-semibold text-black  lg:text-fontdsize18">ARTISTS</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" font-semibold text-black  lg:text-fontdsize18">SOLD ARTWORK</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" font-semibold text-black   lg:text-fontdsize18">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" font-semibold text-black  lg:text-fontdsize18">BUY A GIFT CARD</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" font-semibold text-orange2  lg:text-fontdsize18">ARE YOU AN ARTIST?</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="items-center space-x-3 lg:flex order lg:order-last">
+                <!-- Icons -->
+                <img class="" src="img/search.svg" alt="" />
+                <img class="lg:block" src="img/user.svg" alt="" />
+                <img class="" src="img/navheart.svg" alt="" />
+                <img class="hidden lg:block" src="img/cart.svg" alt="" />
+            </div>
+        </nav>
+
+        <!-- mobile -->
+        <div class=" lg:hidden grid grid-cols-3 justify-between items-center">
+            <img id="open-nav" src="img/burger.svg" alt="">
+            <a class="m-auto" href="index.html" aria-label="danishgallery logo"><img class=" dkgallerymblogo"
+                    src="img/logo.svg" alt="" /></a>
+            <div class=" flex flex-row justify-end gap-x-spacing10 ">
+                <img class="" src="img/search.svg" alt="" />
+                <img class="" src="img/cart.svg" alt="" />
+            </div>
+
+        </div>
+        <nav id="overlay"
+            class="gem fixed top-0 left-0 bottom-0 right-0 h-full w-auto bg-white z-20 pt-spacing20 pl-spacing10 pr-spacing10">
+            <img id="close-nav" src="img/navclosebutton.svg" alt="">
+            <ul class=" mobileul grid grid-rows-6 justify-items-center">
+                <li class="border-b-2 border-black w-full flex justify-center	">
+                    <a href="artwork.html"
+                        class="font-semibold text-black text-largebody  pb-spacing24 pt-spacing24">ARTWORK</a>
+                </li>
+                <li class="border-b-2 border-black w-full flex justify-center">
+                    <a href="artists.html"
+                        class=" font-semibold text-black text-largebody pb-spacing24 pt-spacing24">ARTISTS</a>
+                </li>
+                <li class="border-b-2 border-black w-full flex justify-center">
+                    <a href="#" class=" font-semibold text-black  text-largebody pb-spacing24 pt-spacing24">SOLD
+                        ARTWORK</a>
+                </li>
+                <li class="border-b-2 border-black w-full flex justify-center pt-spacing24">
+                    <a href="#" class=" font-semibold text-black  text-largebody ">ABOUT US</a>
+                </li>
+                <li class="border-b-2 border-black w-full flex justify-center">
+                    <a href="#" class=" font-semibold text-black text-largebody  pb-spacing24 pt-spacing24">BUY A GIFT
+                        CARD</a>
+                </li>
+                <li class="border-b-2 border-black w-full flex justify-center">
+                    <a href="#" class=" font-semibold text-orange2 text-largebody pb-spacing24 pt-spacing24">ARE YOU AN
+                        ARTIST?</a>
+                </li>
+                <li class="border-b-2 border-black w-full flex justify-center">
+                    <div class="flex flex-row items-center gap-x-spacing10 pb-spacing24 pt-spacing24">
+                        <img src="img/user.svg" alt="">
+                        <p class="font-semibold text-black text-largebody ">LOG IN</p>
+                    </div>
+                </li>
+                <li class="w-full flex justify-center pb-spacing24 pt-spacing24">
+                    <img src="img/navheart.svg" alt="">
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="">
+        <section class="flex flex-col gap-y-spacing40 mx-spacing14 lg:my-spacing20 lg:mx-spacing80 h-[80vh]">
+            <h1 class="text-lDisplat">
+                Site Map
+            </h1>
+            <a class="text-fontdsize18 font-medium lg:text-largebody lg:hover:text-orange3"
+                href="index.html">HOMPAGE</a>
+            <a class="text-fontdsize18 ml-spacing20  font-medium lg:text-largebody lg:hover:text-orange3"
+                href="artwork.html">ARTWORK</a>
+            <a class="text-fontdsize18 ml-spacing20  font-medium lg:text-largebody lg:hover:text-orange3"
+                href="artists.html">ARTISTS</a>
+            <a class="text-fontdsize18 ml-spacing20  font-medium lg:text-largebody lg:hover:text-orange3"
+                href="artistbio.html">ARTIST
+                BIO (DORTE JUUL)</a>
+            <a class="text-fontdsize18 ml-spacing40  font-medium lg:text-largebody lg:hover:text-orange3"
+                href="productpage.html">PRODUCT (ABSTRACTION - DORTE JUUL)</a>
+            <a class="text-fontdsize18 font-medium lg:text-largebody lg:hover:text-orange3" href="#">XML SITE
+                MAP(LINK)</a>
+        </section>
+    </main>
+    <!--footer starts-->
+    <footer class="bg-black text-white1">
+        <div class="flex flex-col items-center gap-4 lg:grid lg:grid-cols-3">
+            <div class="smallbody lg:standardbody">
+                <div class="mx-auto mt-5 inline-block lg:ml-16">
+                    <p class="lg:mbodytext text-orange2">Danish Gallery</p>
+                    <hr class="my-3 h-px w-32 border-0 bg-orange2" />
+
+                    <p>Gallery Landlystvej 146,</p>
+                    <p>6715 Esbjerg N - Denmark</p>
+                    <p>+45 26 66 5605</p>
+                    <p>info@danishgallery.com</p>
+                    <p>CVR: 26965632DK</p>
+                    <p>Nykredit Bank: 5479</p>
+                    <p>0004427960</p>
+                </div>
+            </div>
+            <div class="lg:m-auto">
+                <p class="smallbody lg:standardbody pt-12 text-center tracking-widest">
+                    SIGN UP TO THE NEWSLETTER
+                </p>
+                <div
+                    class="lg: mt-4 h-12 w-64 items-center bg-white1 outline outline-2 outline-offset-0 outline-orange2">
+                </div>
+            </div>
+            <div class="mt-12">
+                <div class="grid grid-cols-2">
+                    <div class="smallbody mx-auto">
+                        <p>About us</p>
+                        <p class="mt-3">Art for business</p>
+                        <p class="mt-3">Contact</p>
+                    </div>
+                    <div class="smallbody ml-6">
+                        <p>FAQ</p>
+                        <p class="mt-3">Trustpilot</p>
+                        <p class="mt-3">Buy a gift card</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="mt-12">
+            <img class="mx-auto" src="img/paysystems.svg" alt="" />
+            <div class="mt-7 mr-8 flex flex-row justify-center pb-4 lg:justify-end">
+                <img src="img/faceb.svg" alt="" /> <img src="img/ig.svg" alt="" />
+            </div>
+        </section>
+    </footer>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

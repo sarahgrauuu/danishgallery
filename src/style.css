@@ -748,10 +748,10 @@ div.likeicon-container:active {
   font-weight: var(--medium);
 }
 
-div#open-filters,
+/* div#open-filters,
 .filtertoggle {
   display: none;
-}
+} */
 
 /* Filter */
 

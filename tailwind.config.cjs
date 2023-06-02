@@ -70,6 +70,7 @@ module.exports = {
         smalldisplay: "1.953rem",
         xxsmalldisplay: "1.25rem",
         mDisplay: "2.41rem",
+        lDisplat: "3.81rem",
       },
 
       width: {
